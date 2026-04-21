@@ -3,7 +3,7 @@ import TarjetaProyecto from "./TarjetaProyecto";
 
 function ProyectosAcademicos() {
   return (
-    <section className="seccion proyectos" id="proyectos-academicos">
+    <section className="seccion proyectos animar" id="proyectos-academicos">
       <div className="contenedor">
         <div className="seccion__encabezado">
           <p className="seccion__mini">Trabajos de clase y universidad</p>

@@ -1,6 +1,6 @@
 function SobreMi() {
   return (
-    <section className="seccion sobre-mi" id="sobre-mi">
+    <section className="seccion sobre-mi animar" id="sobre-mi">
       <div className="contenedor">
         <div className="seccion__encabezado">
           <p className="seccion__mini">Quién soy</p>

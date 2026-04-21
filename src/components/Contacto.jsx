@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 function Contacto() {
   return (
-    <section className="seccion contacto" id="contacto">
+    <section className="seccion contacto animar" id="contacto">
       <div className="contenedor">
         <div className="seccion__encabezado">
           <p className="seccion__mini">Hablemos</p>

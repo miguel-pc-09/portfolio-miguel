@@ -3,7 +3,7 @@ import TarjetaProyecto from "./TarjetaProyecto";
 
 function ProximosProyectos() {
   return (
-    <section className="seccion proyectos" id="ideas-proyectos">
+    <section className="seccion proyectos animar" id="ideas-proyectos">
       <div className="contenedor">
         <div className="seccion__encabezado">
           <p className="seccion__mini">

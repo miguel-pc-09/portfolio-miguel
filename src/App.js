@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar";
@@ -15,6 +15,26 @@ function App() {
   function cambiarTema() {
     setTemaOscuro(!temaOscuro);
   }
+  useEffect(() => {
+    const elementos = document.querySelectorAll(".animar");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      },
+      {
+        threshold: 0.15,
+      },
+    );
+
+    elementos.forEach((elemento) => observer.observe(elemento));
+
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <BrowserRouter>
