@@ -3,6 +3,7 @@ import SobreMi from "../components/SobreMi";
 import Proyectos from "../components/Proyectos";
 import ProximosProyectos from "../components/ProximosProyectos";
 import Contacto from "../components/Contacto";
+import ProyectosAcademicos from "../components/ProyectosAcademicos";
 
 function Inicio() {
   return (
@@ -10,6 +11,7 @@ function Inicio() {
       <Hero />
       <SobreMi />
       <Proyectos />
+      <ProyectosAcademicos />
       <ProximosProyectos />
       <Contacto />
     </>

@@ -1,11 +1,19 @@
 import { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
-import proyectos from "../data/proyectos";
+import proyectos, {
+  proyectosAcademicos,
+  ideasProyectos,
+} from "../data/proyectos";
 
 function DetalleProyecto() {
   const { slug } = useParams();
 
-  const proyecto = proyectos.find((item) => item.slug === slug);
+  const todosLosProyectos = [
+    ...proyectos,
+    ...proyectosAcademicos,
+    ...ideasProyectos,
+  ];
+  const proyecto = todosLosProyectos.find((item) => item.slug === slug);
 
   useEffect(() => {
     const elementos = document.querySelectorAll(".detalle-proyecto__reveal");

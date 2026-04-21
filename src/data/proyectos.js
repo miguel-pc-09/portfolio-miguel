@@ -86,3 +86,115 @@ const proyectos = [
 ];
 
 export default proyectos;
+
+export const proyectosAcademicos = [
+  {
+    id: 101,
+    slug: "lumos-candles",
+    categoria: "Proyecto académico / Interfaces",
+    titulo: "LUMOS Candles",
+    descripcion:
+      "Proyecto de clase en el que diseñé una tienda online ficticia de velas, cuidando la estética general, la presentación visual y la coherencia entre páginas.",
+    descripcionLarga:
+      "Este proyecto lo hice para la asignatura de Interfaces y consistía en crear una pequeña tienda online ficticia usando HTML5 y CSS3. Tenía que desarrollar una portada, una página de producto y un formulario de contacto, manteniendo la misma línea visual en todo el sitio. En mi caso elegí una temática de velas inspiradas en películas y libros, buscando que la web tuviera personalidad y que no se viera como una práctica genérica más.",
+    tecnologias: ["HTML5", "CSS3"],
+    estado: "Completado",
+    enlaceDemo: "https://lumos-candles-miguel.netlify.app/",
+    imagen: "/imagenes/lumos-candles.png",
+    objetivo:
+      "Con este ejercicio quería demostrar que sé montar una web sencilla pero bien presentada, cuidando la estética, la organización del contenido y la sensación general al recorrerla.",
+    funcionalidades: [
+      "Página de inicio con cabecera, navegación y presentación visual de la tienda",
+      "Página de producto con imagen, nombre, precio y descripción",
+      "Formulario de contacto con nombre, correo y mensaje",
+      "Diseño visual consistente entre todas las páginas",
+      "Uso de HTML5 y CSS3 para estructurar y maquetar toda la web",
+      "Enfoque visual temático para darle personalidad al proyecto",
+    ],
+    trabajoRealizado:
+      "Aquí trabajé sobre todo la maquetación, la coherencia entre pantallas, la elección de colores, la colocación de imágenes y la presentación del contenido para que todo se entendiera fácil y tuviera una estética más cuidada.",
+    estadoDetalle:
+      "Aunque es una práctica académica, intenté plantearla como una web con identidad propia. La idea era que quien la vea note que no solo cumple el ejercicio, sino que también hay intención de diseño y gusto por la parte visual.",
+  },
+  {
+    id: 102,
+    slug: "agenda-web",
+    categoria: "Proyecto académico / Interfaces",
+    titulo: "Agenda Web",
+    descripcion:
+      "Proyecto de clase orientado a la creación de una interfaz clara y práctica para organizar información, trabajando estructura, distribución de elementos y usabilidad.",
+    descripcionLarga:
+      "Este fue otro de los proyectos de Interfaces. La idea era desarrollar una agenda web con una estructura ordenada, cómoda de usar y fácil de entender a simple vista. En este tipo de ejercicios intento que no solo funcione, sino que además tenga una presentación limpia, con una distribución clara de los bloques y una navegación visual sencilla.",
+    tecnologias: ["HTML5", "CSS3", "JavaScript"],
+    estado: "Completado",
+    enlaceDemo: "",
+    imagen: "/imagenes/agenda-web.png",
+    objetivo:
+      "Quería crear una interfaz práctica y visualmente ordenada, donde se notara que sé estructurar bien la información y darle una forma clara de cara al usuario.",
+    funcionalidades: [
+      "Interfaz organizada para mostrar y gestionar información",
+      "Distribución visual clara de los distintos bloques",
+      "Diseño pensado para que todo se entienda de un vistazo",
+      "Uso de HTML, CSS y JavaScript para dar estructura y dinamismo",
+    ],
+    trabajoRealizado:
+      "En este proyecto me centré bastante en la organización del contenido, en los espacios entre elementos y en que la interfaz resultara clara, lógica y fácil de recorrer.",
+    estadoDetalle:
+      "Lo enfoqué como una práctica para demostrar orden visual, limpieza en la maquetación y capacidad para construir una interfaz útil sin recargarla innecesariamente.",
+  },
+];
+
+export const ideasProyectos = [
+  {
+    id: 201,
+    slug: "idea-app-viajes",
+    categoria: "Idea de proyecto / Frontend",
+    titulo: "App de viajes",
+    descripcion:
+      "Idea de una interfaz pensada para buscar destinos, organizar escapadas y mostrar la información de forma visual, clara y cómoda para el usuario.",
+    descripcionLarga:
+      "Esta es una de las ideas que quiero desarrollar más adelante por mi cuenta. La planteo como una aplicación centrada en mostrar destinos, escapadas o planes de viaje de forma muy visual, con una navegación cómoda y una interfaz moderna. Me interesa bastante porque mezcla diseño, organización de información y una experiencia que puede quedar muy atractiva a nivel frontend.",
+    tecnologias: ["React", "JavaScript", "CSS"],
+    estado: "Idea",
+    enlaceDemo: "",
+    imagen: "/imagenes/idea-viajes.png",
+    objetivo:
+      "Quiero que sea un proyecto donde se note sobre todo el trabajo visual, la organización de bloques y una experiencia clara para consultar información.",
+    funcionalidades: [
+      "Listado visual de destinos o escapadas",
+      "Tarjetas con información clara y bien distribuida",
+      "Diseño atractivo pensado para escritorio y móvil",
+      "Navegación sencilla y cómoda de usar",
+    ],
+    trabajoRealizado:
+      "Por ahora está planteado como idea, pero quiero enfocarlo como un proyecto fuerte de frontend en el que pueda enseñar diseño visual, estructura y experiencia de usuario.",
+    estadoDetalle:
+      "Todavía está en fase de planteamiento, pero la intención es desarrollarlo como una interfaz moderna, clara y bastante cuidada a nivel visual.",
+  },
+  {
+    id: 202,
+    slug: "idea-app-cargadores",
+    categoria: "Idea de proyecto / Frontend",
+    titulo: "App de cargadores",
+    descripcion:
+      "Idea de proyecto enfocada en localizar cargadores, mostrar disponibilidad y facilitar al usuario una experiencia sencilla y útil desde el primer vistazo.",
+    descripcionLarga:
+      "Otra idea que quiero desarrollar es una interfaz orientada a la búsqueda de cargadores para coche eléctrico. Me interesa porque permite trabajar mapas, filtros, estado de disponibilidad y una experiencia útil para el usuario. A nivel visual creo que puede quedar muy bien y además tiene una parte práctica bastante clara.",
+    tecnologias: ["React", "JavaScript", "CSS"],
+    estado: "Idea",
+    enlaceDemo: "",
+    imagen: "/imagenes/idea-cargadores.png",
+    objetivo:
+      "Me gustaría usar este proyecto para enseñar que también sé plantear interfaces útiles, no solo visuales, cuidando la claridad de la información y la facilidad de uso.",
+    funcionalidades: [
+      "Listado de cargadores con información relevante",
+      "Posibles filtros por tipo, zona o disponibilidad",
+      "Interfaz clara para consultar datos rápidamente",
+      "Diseño pensado para resultar útil y fácil de recorrer",
+    ],
+    trabajoRealizado:
+      "Todavía está como idea, pero ya tengo claro el enfoque visual y la utilidad que quiero darle para convertirlo en un proyecto completo más adelante.",
+    estadoDetalle:
+      "La intención es desarrollarlo como una interfaz frontend centrada en usabilidad, información clara y una presentación visual moderna.",
+  },
+];
