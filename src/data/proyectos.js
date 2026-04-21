@@ -118,29 +118,32 @@ export const proyectosAcademicos = [
   },
   {
     id: 102,
-    slug: "agenda-web",
+    slug: "planner-studio",
     categoria: "Proyecto académico / Interfaces",
-    titulo: "Agenda Web",
+    titulo: "Planner Studio",
     descripcion:
-      "Proyecto de clase orientado a la creación de una interfaz clara y práctica para organizar información, trabajando estructura, distribución de elementos y usabilidad.",
+      "Proyecto de clase en el que diseñé una tienda online de agendas usando Bootstrap, cuidando sobre todo la estructura de la web, la presentación del contenido y que todo mantuviera el mismo estilo entre páginas.",
     descripcionLarga:
-      "Este fue otro de los proyectos de Interfaces. La idea era desarrollar una agenda web con una estructura ordenada, cómoda de usar y fácil de entender a simple vista. En este tipo de ejercicios intento que no solo funcione, sino que además tenga una presentación limpia, con una distribución clara de los bloques y una navegación visual sencilla.",
-    tecnologias: ["HTML5", "CSS3", "JavaScript"],
+      "Este proyecto lo hice para la asignatura de Interfaces y consistía en crear una tienda online usando Bootstrap como base de la estructura. Tenía que preparar una portada, una página de producto y un formulario de contacto, manteniendo una estética parecida en todo el sitio. En mi caso elegí la temática de agendas y papelería, porque me daba juego para hacer una web visualmente ordenada y agradable de ver.",
+    tecnologias: ["HTML5", "CSS3", "Bootstrap 5"],
     estado: "Completado",
-    enlaceDemo: "",
+    enlaceDemo: "https://planer-studio.netlify.app/",
     imagen: "/imagenes/agenda-web.png",
     objetivo:
-      "Quería crear una interfaz práctica y visualmente ordenada, donde se notara que sé estructurar bien la información y darle una forma clara de cara al usuario.",
+      "Con este ejercicio quería demostrar que también sé trabajar una web a partir de Bootstrap, no solo colocando componentes, sino adaptándolos para que la página tuviera un estilo propio y quedara clara al navegar.",
     funcionalidades: [
-      "Interfaz organizada para mostrar y gestionar información",
-      "Distribución visual clara de los distintos bloques",
-      "Diseño pensado para que todo se entienda de un vistazo",
-      "Uso de HTML, CSS y JavaScript para dar estructura y dinamismo",
+      "Página principal con cabecera, navegación e imagen introductoria",
+      "Página de producto con imagen, precio, descripción y enfoque visual de tienda",
+      "Formulario de contacto con los datos básicos del usuario",
+      "Estructura maquetada con Bootstrap",
+      "Apoyo de CSS propio para ajustar detalles visuales",
+      "Estética coherente entre las distintas páginas del proyecto",
+      "Página adicional de compra para completar mejor la experiencia",
     ],
     trabajoRealizado:
-      "En este proyecto me centré bastante en la organización del contenido, en los espacios entre elementos y en que la interfaz resultara clara, lógica y fácil de recorrer.",
+      "En este proyecto trabajé sobre todo con HTML, CSS y Bootstrap. Me centré en usar bien la rejilla, las cards, la navegación, los formularios y la distribución de los bloques para que la web quedara ordenada, clara y con un estilo uniforme en todas las páginas.",
     estadoDetalle:
-      "Lo enfoqué como una práctica para demostrar orden visual, limpieza en la maquetación y capacidad para construir una interfaz útil sin recargarla innecesariamente.",
+      "Aunque era una práctica de clase, intenté que no se viera como una plantilla puesta sin más. La idea fue darle una imagen más cuidada, aprovechar los recursos de Bootstrap y acompañarlo con CSS propio para que el resultado tuviera más personalidad.",
   },
 ];
 
