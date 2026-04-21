@@ -145,6 +145,44 @@ export const proyectosAcademicos = [
     estadoDetalle:
       "Aunque era una práctica de clase, intenté que no se viera como una plantilla puesta sin más. La idea fue darle una imagen más cuidada, aprovechar los recursos de Bootstrap y acompañarlo con CSS propio para que el resultado tuviera más personalidad.",
   },
+  {
+    id: 103,
+    slug: "tienda-online-javascript",
+    categoria: "Proyecto académico / JavaScript",
+    titulo: "Tienda online con JavaScript",
+    descripcion:
+      "Simulación de una tienda con productos cargados desde API, filtros y carrito funcional.",
+
+    descripcionLarga:
+      "En este proyecto desarrollé una tienda online consumiendo datos desde una API externa. Trabajé la parte de JavaScript gestionando filtros, búsqueda y el carrito de compra. Además mejoré el diseño para que se pareciera más a una tienda real y no solo a un ejercicio básico.",
+
+    tecnologias: ["HTML", "CSS", "JavaScript", "Bootstrap", "SweetAlert"],
+
+    estado: "Completado",
+
+    enlaceDemo: "https://mi-tienda-js.netlify.app/",
+
+    imagen: "/imagenes/tienda-js.png",
+
+    objetivo:
+      "Practicar JavaScript trabajando con APIs externas, filtrado de datos y gestión de un carrito de compra.",
+
+    funcionalidades: [
+      "Carga de productos desde API externa",
+      "Filtrado por precio mínimo y máximo",
+      "Filtrado por categoría y marca",
+      "Buscador en tiempo real",
+      "Ordenación por precio",
+      "Carrito de compra funcional",
+      "Eliminación individual de productos del carrito",
+      "Confirmación de compra con SweetAlert",
+    ],
+
+    trabajoRealizado:
+      "En este proyecto me centré en trabajar JavaScript de forma práctica: fetch, filtrado de arrays, eventos y manipulación del DOM. También rehice la parte visual para que tuviera un aspecto más limpio y cercano a una tienda real.",
+
+    estadoDetalle: "Proyecto terminado y adaptado para portfolio",
+  },
 ];
 
 export const ideasProyectos = [

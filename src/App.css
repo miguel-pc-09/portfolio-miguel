@@ -52,6 +52,105 @@ a {
   z-index: 0;
 }
 
+.meteoro {
+  position: absolute;
+  width: 210px;
+  height: 2px;
+  border-radius: 999px;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 170, 255, 0),
+    rgba(0, 170, 255, 0.2),
+    rgba(0, 170, 255, 0.9),
+    rgba(0, 170, 255, 0)
+  );
+  transform: rotate(135deg);
+  opacity: 0.6;
+  pointer-events: none;
+  animation: trazoDiagonal 10s linear infinite;
+}
+
+/* Más repartidos por toda la pantalla */
+.meteoro-1 {
+  top: 70px;
+  left: 8%;
+  animation-delay: 0s;
+}
+
+.meteoro-2 {
+  top: 150px;
+  left: 28%;
+  animation-delay: 1.1s;
+}
+
+.meteoro-3 {
+  top: 95px;
+  left: 55%;
+  animation-delay: 2.2s;
+}
+
+.meteoro-4 {
+  top: 180px;
+  left: 78%;
+  animation-delay: 3.3s;
+}
+
+.meteoro-5 {
+  top: 320px;
+  left: 14%;
+  animation-delay: 4.4s;
+}
+
+.meteoro-6 {
+  top: 430px;
+  left: 46%;
+  animation-delay: 5.5s;
+}
+
+.meteoro-7 {
+  top: 540px;
+  left: 74%;
+  animation-delay: 6.6s;
+}
+
+.meteoro-8 {
+  top: 650px;
+  left: 24%;
+  animation-delay: 7.7s;
+}
+
+.meteoro-9 {
+  top: 760px;
+  left: 58%;
+  animation-delay: 8.8s;
+}
+
+.meteoro-10 {
+  top: 880px;
+  left: 84%;
+  animation-delay: 9.9s;
+}
+
+@keyframes trazoDiagonal {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(135deg);
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0.6;
+  }
+
+  75% {
+    opacity: 0.32;
+  }
+
+  100% {
+    transform: translate3d(-280px, 280px, 0) rotate(135deg);
+    opacity: 0;
+  }
+}
+
 .orbita {
   position: absolute;
   border-radius: 50%;

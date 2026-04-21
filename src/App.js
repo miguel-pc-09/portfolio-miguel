@@ -32,6 +32,10 @@ function App() {
           <span className="meteoro meteoro-4"></span>
           <span className="meteoro meteoro-5"></span>
           <span className="meteoro meteoro-6"></span>
+          <span className="meteoro meteoro-7"></span>
+          <span className="meteoro meteoro-8"></span>
+          <span className="meteoro meteoro-9"></span>
+          <span className="meteoro meteoro-10"></span>
         </div>
 
         <Navbar temaOscuro={temaOscuro} cambiarTema={cambiarTema} />
