@@ -192,25 +192,27 @@ export const ideasProyectos = [
     categoria: "Idea de proyecto / Frontend",
     titulo: "App de viajes",
     descripcion:
-      "Idea de una interfaz pensada para buscar destinos, organizar escapadas y mostrar la información de forma visual, clara y cómoda para el usuario.",
+      "Idea de una aplicación para descubrir planes y escapadas según el tiempo, mostrando todo de forma visual y fácil de entender desde el primer momento.",
     descripcionLarga:
-      "Esta es una de las ideas que quiero desarrollar más adelante por mi cuenta. La planteo como una aplicación centrada en mostrar destinos, escapadas o planes de viaje de forma muy visual, con una navegación cómoda y una interfaz moderna. Me interesa bastante porque mezcla diseño, organización de información y una experiencia que puede quedar muy atractiva a nivel frontend.",
+      "En este proyecto he querido centrarme sobre todo en la parte visual. La idea es que el usuario entre, vea el tiempo y automáticamente le aparezcan recomendaciones de sitios o planes que encajen con ese momento. He trabajado una interfaz clara, con tarjetas, buscador y una estructura pensada para que todo sea fácil de recorrer.",
     tecnologias: ["React", "JavaScript", "CSS"],
     estado: "Idea",
-    enlaceDemo: "",
-    imagen: "/imagenes/idea-viajes.png",
+    enlaceDemo: "/demo/app-viajes",
+    imagen: "/imagenes/app-viajes.png",
     objetivo:
-      "Quiero que sea un proyecto donde se note sobre todo el trabajo visual, la organización de bloques y una experiencia clara para consultar información.",
+      "El objetivo principal es construir una interfaz que transmita rápido lo que ofrece la aplicación, que sea visualmente atractiva y que invite a seguir navegando sin esfuerzo.",
     funcionalidades: [
-      "Listado visual de destinos o escapadas",
-      "Tarjetas con información clara y bien distribuida",
-      "Diseño atractivo pensado para escritorio y móvil",
-      "Navegación sencilla y cómoda de usar",
+      "Pantalla principal con sugerencias según el tiempo",
+      "Tarjetas visuales de destinos o escapadas",
+      "Vista de detalle con imagen principal e información del sitio",
+      "Galería de imágenes con navegación lateral",
+      "Bloque de gastronomía y restaurantes recomendados",
+      "Botón para ver una ruta recomendada por el lugar",
     ],
     trabajoRealizado:
-      "Por ahora está planteado como idea, pero quiero enfocarlo como un proyecto fuerte de frontend en el que pueda enseñar diseño visual, estructura y experiencia de usuario.",
+      "He desarrollado toda la parte frontend como una demo funcional. Me he centrado en el diseño, la distribución de los elementos y en que la experiencia sea cómoda desde el primer vistazo.",
     estadoDetalle:
-      "Todavía está en fase de planteamiento, pero la intención es desarrollarlo como una interfaz moderna, clara y bastante cuidada a nivel visual.",
+      "Todavía está en fase de idea, pero quiero convertirlo en un proyecto fuerte de frontend donde se vea bien el diseño de interfaz, la estructura de los bloques y la forma de presentar la información.",
   },
   {
     id: 202,
