@@ -86,6 +86,7 @@ const proyectos = [
   {
     id: 4,
     slug: "invitacion-estilo-harry-potter",
+    categoria: "Frontend / UI",
     titulo: "Invitación estilo Harry Potter",
     descripcion:
       "Invitación interactiva con estética mágica inspirada en Harry Potter. Permite generar una carta personalizada con datos del evento de forma visual y dinámica.",

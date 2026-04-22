@@ -1,61 +1,6 @@
 import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
-import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
-import L from "leaflet";
-import "leaflet/dist/leaflet.css";
+import { useState } from "react";
 import "../styles/demo-app-cargadores.css";
-
-const iconoMarcador = new L.Icon({
-  iconUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png",
-  shadowUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
-  iconSize: [25, 41],
-  iconAnchor: [12, 41],
-});
-
-const puntosMapa = [
-  {
-    id: 1,
-    nombre: "Punto Gran Vía",
-    zona: "Madrid centro",
-    direccion: "Gran Vía, 32",
-    posicion: [40.4202, -3.7058],
-  },
-  {
-    id: 2,
-    nombre: "Punto Retiro",
-    zona: "Madrid",
-    direccion: "Av. Menéndez Pelayo, 5",
-    posicion: [40.4183, -3.6762],
-  },
-  {
-    id: 3,
-    nombre: "Punto Plaza Castilla",
-    zona: "Madrid norte",
-    direccion: "Paseo de la Castellana, 189",
-    posicion: [40.4667, -3.6892],
-  },
-  {
-    id: 4,
-    nombre: "Punto Diagonal",
-    zona: "Barcelona",
-    direccion: "Av. Diagonal, 211",
-    posicion: [41.4086, 2.1914],
-  },
-  {
-    id: 5,
-    nombre: "Punto Sants",
-    zona: "Barcelona",
-    direccion: "Carrer de Tarragona, 140",
-    posicion: [41.3791, 2.1404],
-  },
-  {
-    id: 6,
-    nombre: "Punto La Garena",
-    zona: "Alcalá de Henares",
-    direccion: "Av. Juan Carlos I, 13",
-    posicion: [40.4898, -3.3921],
-  },
-];
 
 function DemoAppCargadores() {
   const [cargadores, setCargadores] = useState([
