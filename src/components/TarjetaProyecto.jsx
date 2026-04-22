@@ -7,6 +7,7 @@ function TarjetaProyecto({
   estado,
   slug,
   imagen,
+  demo,
 }) {
   return (
     <article className="tarjeta-proyecto">
@@ -29,9 +30,20 @@ function TarjetaProyecto({
         ))}
       </div>
 
-      <Link to={`/proyectos/${slug}`} className="tarjeta-proyecto__enlace">
-        Ver más
-      </Link>
+      {demo ? (
+        <a
+          href={demo}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="tarjeta-proyecto__enlace"
+        >
+          Ver más
+        </a>
+      ) : (
+        <Link to={`/proyectos/${slug}`} className="tarjeta-proyecto__enlace">
+          Ver más
+        </Link>
+      )}
     </article>
   );
 }

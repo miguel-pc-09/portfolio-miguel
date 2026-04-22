@@ -20,6 +20,7 @@ function Proyectos() {
               estado={proyecto.estado}
               slug={proyecto.slug}
               imagen={proyecto.imagen}
+              demo={proyecto.demo}
             />
           ))}
         </div>

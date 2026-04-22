@@ -83,6 +83,17 @@ const proyectos = [
     estadoDetalle:
       "Para plantearlo me fijé en ideas habituales de usabilidad en formularios, como mantener las etiquetas visibles, acercar los mensajes al campo correspondiente y dejar una estructura más limpia y menos agobiante. La intención era que se notara trabajo de diseño, no solo que el formulario funcionara.",
   },
+  {
+    id: 4,
+    slug: "invitacion-estilo-harry-potter",
+    titulo: "Invitación estilo Harry Potter",
+    descripcion:
+      "Invitación interactiva con estética mágica inspirada en Harry Potter. Permite generar una carta personalizada con datos del evento de forma visual y dinámica.",
+    tecnologias: ["React", "JavaScript", "CSS", "Vercel"],
+    estado: "Completado",
+    imagen: "/imagenes/invitacion-harry.png",
+    demo: "https://invitacion-miguel-rouge.vercel.app/",
+  },
 ];
 
 export default proyectos;
