@@ -19,6 +19,27 @@ function ContenidoRutas({ temaOscuro, cambiarTema }) {
     location.pathname === "/demo/app-viajes" ||
     location.pathname === "/demo/app-cargadores";
 
+  useEffect(() => {
+    const elementos = document.querySelectorAll(".animar");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      },
+      {
+        threshold: 0.15,
+      },
+    );
+
+    elementos.forEach((elemento) => observer.observe(elemento));
+
+    return () => observer.disconnect();
+  }, [location.pathname]);
+
   return (
     <div className={temaOscuro ? "app tema-oscuro" : "app tema-claro"}>
       {!esDemo && (
@@ -65,27 +86,6 @@ function App() {
   function cambiarTema() {
     setTemaOscuro(!temaOscuro);
   }
-
-  useEffect(() => {
-    const elementos = document.querySelectorAll(".animar");
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
-          }
-        });
-      },
-      {
-        threshold: 0.15,
-      },
-    );
-
-    elementos.forEach((elemento) => observer.observe(elemento));
-
-    return () => observer.disconnect();
-  }, []);
 
   return (
     <BrowserRouter>
