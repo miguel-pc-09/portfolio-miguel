@@ -9,15 +9,19 @@ import Inicio from "./pages/Inicio";
 import DetalleProyecto from "./pages/DetalleProyecto";
 import DemoFormulario from "./pages/DemoFormulario";
 import DemoAppViajes from "./pages/DemoAppViajes";
+import DemoAppCargadores from "./pages/DemoAppCargadores";
 
 function ContenidoRutas({ temaOscuro, cambiarTema }) {
   const location = useLocation();
 
-  const esDemoViajes = location.pathname === "/demo/app-viajes";
+  const esDemo =
+    location.pathname === "/demo/formulario-web-interactivo" ||
+    location.pathname === "/demo/app-viajes" ||
+    location.pathname === "/demo/app-cargadores";
 
   return (
     <div className={temaOscuro ? "app tema-oscuro" : "app tema-claro"}>
-      {!esDemoViajes && (
+      {!esDemo && (
         <div className="fondo-animado">
           <span className="orbita orbita-1"></span>
           <span className="orbita orbita-2"></span>
@@ -36,9 +40,7 @@ function ContenidoRutas({ temaOscuro, cambiarTema }) {
         </div>
       )}
 
-      {!esDemoViajes && (
-        <Navbar temaOscuro={temaOscuro} cambiarTema={cambiarTema} />
-      )}
+      {!esDemo && <Navbar temaOscuro={temaOscuro} cambiarTema={cambiarTema} />}
 
       <Routes>
         <Route path="/" element={<Inicio />} />
@@ -48,10 +50,11 @@ function ContenidoRutas({ temaOscuro, cambiarTema }) {
           element={<DemoFormulario />}
         />
         <Route path="/demo/app-viajes" element={<DemoAppViajes />} />
+        <Route path="/demo/app-cargadores" element={<DemoAppCargadores />} />
       </Routes>
 
-      {!esDemoViajes && <BotonSubir />}
-      {!esDemoViajes && <Footer />}
+      {!esDemo && <BotonSubir />}
+      {!esDemo && <Footer />}
     </div>
   );
 }

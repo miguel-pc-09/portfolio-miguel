@@ -192,27 +192,29 @@ export const ideasProyectos = [
     categoria: "Idea de proyecto / Frontend",
     titulo: "App de viajes",
     descripcion:
-      "Idea de una aplicación para descubrir planes y escapadas según el tiempo, mostrando todo de forma visual y fácil de entender desde el primer momento.",
+      "Aplicación pensada para recomendar escapadas y planes según la estación del año y el tiempo real, no solo por la zona o por búsquedas genéricas.",
     descripcionLarga:
-      "En este proyecto he querido centrarme sobre todo en la parte visual. La idea es que el usuario entre, vea el tiempo y automáticamente le aparezcan recomendaciones de sitios o planes que encajen con ese momento. He trabajado una interfaz clara, con tarjetas, buscador y una estructura pensada para que todo sea fácil de recorrer.",
+      "Este proyecto empezó por una situación muy normal: no sabía dónde viajar con mi familia. Hay muchas páginas y aplicaciones que te recomiendan sitios, pero normalmente tienes que buscar tú primero por zona, por ejemplo “planes en familia en Madrid” o “planes en el campo”, y a partir de ahí te muestran resultados según valoraciones o recomendaciones de otros usuarios. La idea de esta aplicación va un poco más allá. Lo que busca es cruzar el lugar con el tiempo y la época del año para recomendarte sitios que realmente merezcan la pena en ese momento.",
     tecnologias: ["React", "JavaScript", "CSS"],
     estado: "Idea",
     enlaceDemo: "/demo/app-viajes",
     imagen: "/imagenes/app-viajes.png",
     objetivo:
-      "El objetivo principal es construir una interfaz que transmita rápido lo que ofrece la aplicación, que sea visualmente atractiva y que invite a seguir navegando sin esfuerzo.",
+      "Quería plantear una aplicación que recomendase viajes y escapadas de una forma más útil y más real. No solo decirte sitios bonitos, sino ayudarte a descubrir lugares que encajan con el clima que hace ese día, con la estación del año y con el tipo de plan que buscas. La idea es no limitarse a los días soleados, porque hay muchísimos sitios que con lluvia, niebla, frío o nieve también merecen muchísimo la pena.",
     funcionalidades: [
-      "Pantalla principal con sugerencias según el tiempo",
-      "Tarjetas visuales de destinos o escapadas",
-      "Vista de detalle con imagen principal e información del sitio",
-      "Galería de imágenes con navegación lateral",
-      "Bloque de gastronomía y restaurantes recomendados",
-      "Botón para ver una ruta recomendada por el lugar",
+      "Recomendaciones según el tiempo y la época del año",
+      "Búsqueda por distancia, tipo de plan y duración",
+      "Tarjetas visuales con destinos adaptados al clima",
+      "Vista de detalle con imagen principal e información del lugar",
+      "Rutas recomendadas para aprovechar mejor la visita",
+      "Información útil como precios, gastronomía o momentos recomendados del día",
     ],
     trabajoRealizado:
-      "He desarrollado toda la parte frontend como una demo funcional. Me he centrado en el diseño, la distribución de los elementos y en que la experiencia sea cómoda desde el primer vistazo.",
+      "He trabajado sobre todo la parte visual y la forma de presentar la información. Quería que el usuario entrase y entendiese rápido qué le está recomendando la aplicación y por qué. Me he centrado en una interfaz clara, con tarjetas, filtros y una estructura sencilla de recorrer, para que todo resulte cómodo desde el primer vistazo.",
     estadoDetalle:
-      "Todavía está en fase de idea, pero quiero convertirlo en un proyecto fuerte de frontend donde se vea bien el diseño de interfaz, la estructura de los bloques y la forma de presentar la información.",
+      "La aplicación está pensada para recomendar según el tiempo real y la estación del año. Por ejemplo, lugares como la Selva de Irati o la Sierra de Grazalema son sitios donde la lluvia no es un impedimento y hasta puede hacer que la visita sea más bonita. Lo mismo pasa con planes como los campos de lavanda de Brihuega en julio, o pueblos como Albarracín o Sotres cuando nieva. Muchas páginas no te muestran este enfoque y la gente acaba buscando solo planes de sol, cuando la mezcla entre clima y zona puede hacer que un sitio merezca muchísimo más la pena. Además, la idea incluye recomendar rutas para no perder tiempo, mostrar precios de museos o visitas, incluir sugerencias gastronómicas, imágenes y un espacio donde la gente pueda compartir consejos sobre la mejor hora del día o el mejor momento para ir.",
+    tecnologiasDetalle:
+      "He utilizado React para estructurar la interfaz en componentes reutilizables y poder organizar mejor toda la aplicación. Esto me permite dividir bien cada parte, como la cabecera, el buscador, las tarjetas de destinos o la vista de detalle.\n\nJavaScript se encarga de la lógica de interacción, como el recorrido de tarjetas, la navegación de galerías o la respuesta de la interfaz según las acciones del usuario.\n\nEl diseño está trabajado con CSS, buscando una estética visual, limpia y fácil de recorrer. Aquí me he centrado bastante en que la parte visual ayude a transmitir bien la idea del proyecto, ya que es una aplicación donde entra mucho por los ojos.\n\nEn un desarrollo más completo, esta idea podría conectarse a APIs externas de tiempo y localización para mostrar recomendaciones reales según la meteorología, la época del año y la zona elegida por el usuario.",
   },
   {
     id: 202,
@@ -220,24 +222,28 @@ export const ideasProyectos = [
     categoria: "Idea de proyecto / Frontend",
     titulo: "App de cargadores",
     descripcion:
-      "Idea de proyecto enfocada en localizar cargadores, mostrar disponibilidad y facilitar al usuario una experiencia sencilla y útil desde el primer vistazo.",
+      "Aplicación pensada para localizar y gestionar cargadores gratuitos en un mismo sitio, sin depender de grupos de WhatsApp o conocidos para saber si están libres.",
     descripcionLarga:
-      "Otra idea que quiero desarrollar es una interfaz orientada a la búsqueda de cargadores para coche eléctrico. Me interesa porque permite trabajar mapas, filtros, estado de disponibilidad y una experiencia útil para el usuario. A nivel visual creo que puede quedar muy bien y además tiene una parte práctica bastante clara.",
+      "Esta aplicación nace de una situación real que vivo yo mismo. En muchos sitios, sobre todo en pueblos o zonas más pequeñas, hay cargadores gratuitos que no aparecen en ninguna aplicación. Al final la única forma de enterarte de si están libres es a través de grupos de WhatsApp o redes sociales. La idea es centralizar todos esos puntos de carga en un solo sitio, independientemente de la empresa a la que pertenezcan. Que cualquier persona pueda verlos, saber si están libres y también indicar si está cargando o se reserva. Con esto se evita depender de avisos manuales, mensajes o discusiones típicas de “ya he terminado”, “me pongo en cola” o “se me olvido avisar”. Es una forma mucho más clara y directa de organizarlo entre todos.",
     tecnologias: ["React", "JavaScript", "CSS"],
     estado: "Idea",
-    enlaceDemo: "",
+    enlaceDemo: "/demo/app-cargadores",
     imagen: "/imagenes/idea-cargadores.png",
     objetivo:
-      "Me gustaría usar este proyecto para enseñar que también sé plantear interfaces útiles, no solo visuales, cuidando la claridad de la información y la facilidad de uso.",
+      "Dar visibilidad a todos esos cargadores gratuitos que no aparecen en ningún sitio y que, al no pertenecer a una única empresa, no están bien gestionados. También evitar la dependencia de grupos de WhatsApp y los problemas que eso genera: avisos que no se hacen, gente que se olvida, discusiones o falta de organización. La idea es que cualquier persona pueda ver el estado en tiempo real y tomar decisiones sin tener que preguntar a nadie.",
     funcionalidades: [
-      "Listado de cargadores con información relevante",
-      "Posibles filtros por tipo, zona o disponibilidad",
-      "Interfaz clara para consultar datos rápidamente",
-      "Diseño pensado para resultar útil y fácil de recorrer",
+      "Búsqueda de cargadores por zona",
+      "Mapa con visualización de puntos de carga",
+      "Listado visual de cargadores con estado claro",
+      "Detalle de tomas por cada punto de carga",
+      "Cambio de estado entre libre, cargando y reservado",
+      "Formulario simple para añadir nuevos puntos de carga",
     ],
     trabajoRealizado:
-      "Todavía está como idea, pero ya tengo claro el enfoque visual y la utilidad que quiero darle para convertirlo en un proyecto completo más adelante.",
+      "He diseñado toda la interfaz pensando en que sea rápida de usar y sin complicaciones. La idea es que cualquier persona entre, vea lo que necesita y actúe en pocos segundos. He utilizado tonos azules y verdes para reforzar la idea de movilidad eléctrica y energía limpia, manteniendo un diseño sencillo, sin exceso de texto y centrado en la funcionalidad.",
     estadoDetalle:
-      "La intención es desarrollarlo como una interfaz frontend centrada en usabilidad, información clara y una presentación visual moderna.",
+      "Más adelante se podrían añadir mejoras bastante útiles como indicar el tiempo estimado de carga, para que el resto de usuarios sepan cuándo se va a liberar un punto. También sería interesante añadir notificaciones, por ejemplo por correo o WhatsApp, para avisar cuando termina la carga, ya que muchas apps de fabricantes no lo hacen bien. Otra mejora sería poder marcar un cargador o enchufe como estropeado, y añadir información del responsable (por ejemplo ayuntamiento o empresa) para poder avisar directamente en caso de avería.",
+    tecnologiasDetalle:
+      "He desarrollado esta aplicación utilizando React para estructurar toda la interfaz en componentes reutilizables y poder mantener el código ordenado y escalable. JavaScript se encarga de toda la lógica de la aplicación, como el cambio de estado de los enchufes (libre, cargando o reservado), la gestión de los datos de los cargadores y la interacción del usuario con la interfaz. El diseño está trabajado con CSS, buscando un estilo limpio y directo, utilizando colores azules y verdes para reforzar la idea de energía eléctrica y movilidad sostenible. Para el mapa se utiliza una integración con Google Maps (iframe), simplemente para mostrar la ubicación de forma visual y rápida, sin necesidad de montar una lógica compleja. En un futuro se podría sustituir por una API más avanzada para gestionar marcadores dinámicos.",
   },
 ];

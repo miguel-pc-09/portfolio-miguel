@@ -151,6 +151,14 @@ function DetalleProyecto() {
             <p>{proyecto.trabajoRealizado}</p>
           </article>
 
+          <article className="detalle-proyecto__bloque-zigzag detalle-proyecto__bloque-zigzag--derecha detalle-proyecto__reveal">
+            <p className="detalle-proyecto__etiqueta">Tecnologías</p>
+            <h2>Cómo está construido</h2>
+            <p style={{ whiteSpace: "pre-line" }}>
+              {proyecto.tecnologiasDetalle}
+            </p>
+          </article>
+
           <article className="detalle-proyecto__bloque-zigzag detalle-proyecto__bloque-zigzag--centrado detalle-proyecto__reveal">
             <p className="detalle-proyecto__etiqueta">Funcionalidades</p>
             <h2>Lo más importante que muestra este proyecto</h2>
