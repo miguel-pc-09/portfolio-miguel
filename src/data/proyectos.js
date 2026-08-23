@@ -95,6 +95,54 @@ const proyectos = [
     imagen: "/imagenes/invitacion-harry.png",
     demo: "https://invitacion-miguel-rouge.vercel.app/",
   },
+  {
+    id: 5,
+    slug: "cargaquer",
+    categoria: "Aplicación web full stack",
+    titulo: "CargaQuer",
+    descripcion:
+      "Aplicación web para gestionar reservas y sesiones de carga de vehículos eléctricos en puntos de carga municipales, con área de usuario y panel de administración.",
+    descripcionLarga:
+      "CargaQuer nace a partir de una necesidad real: organizar el uso compartido de cargadores municipales cuando varios usuarios necesitan utilizar las mismas tomas. Desarrollé una aplicación completa donde los usuarios pueden consultar cargadores, reservar franjas horarias, iniciar sesiones de carga y revisar su historial, mientras que la administración dispone de un panel independiente para gestionar usuarios, cargadores, validaciones e incidencias.",
+    tecnologias: [
+      "React",
+      "TypeScript",
+      "Supabase",
+      "PostgreSQL",
+      "Vite",
+      "Netlify",
+    ],
+    estado: "Completado",
+    enlaceDemo: "https://cargaquer.netlify.app/",
+    imagen: "/imagenes/cargaquer.png",
+
+    objetivo:
+      "Quería crear una solución completa para organizar el uso de cargadores municipales, evitando coincidencias entre usuarios y permitiendo gestionar desde una única plataforma las reservas, las sesiones de carga y la administración del servicio.",
+
+    funcionalidades: [
+      "Registro de usuarios y acceso mediante Supabase Auth",
+      "Consulta de cargadores y tomas disponibles",
+      "Sistema de reservas por franjas horarias",
+      "Control de solapamientos y reservas existentes",
+      "Inicio y finalización de sesiones de carga",
+      "Finalización automática de cargas al alcanzar la hora prevista",
+      "Histórico de reservas y sesiones realizadas",
+      "Estadísticas de energía y tiempo acumulado",
+      "Panel administrativo independiente",
+      "Gestión de usuarios, cargadores, tomas e incidencias",
+      "Automatizaciones mediante funciones SQL y Edge Functions",
+      "Diseño responsive para escritorio y móvil",
+    ],
+
+    trabajoRealizado:
+      "En este proyecto trabajé tanto el frontend como la parte de backend y base de datos. Organicé la aplicación con componentes, páginas, servicios y tipos en React y TypeScript, integré Supabase para autenticación y persistencia de datos, desarrollé la lógica de reservas y cargas, configuré funciones SQL y automatizaciones y preparé un panel administrativo independiente. También realicé numerosas pruebas de funcionamiento y adaptación responsive antes del despliegue final.",
+
+    estadoDetalle:
+      "La aplicación está planteada como una plataforma municipal completa con dos áreas diferenciadas: una para los usuarios del servicio y otra para la administración. El objetivo fue mantener una interfaz sencilla para el usuario mientras la lógica de reservas, estados y automatizaciones se gestiona internamente mediante Supabase.",
+
+    tecnologiasDetalle:
+      "React + TypeScript para el frontend y la organización de componentes.\nSupabase Auth para autenticación y sesiones.\nPostgreSQL para usuarios, vehículos, cargadores, reservas, cargas e incidencias.\nFunciones SQL y RPC para procesos internos.\nEdge Functions para automatizaciones y procesos de backend.\nVite para desarrollo y compilación.\nNetlify para el despliegue de la aplicación.",
+  },
 ];
 
 export default proyectos;
