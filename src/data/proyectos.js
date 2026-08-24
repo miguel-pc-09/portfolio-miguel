@@ -101,9 +101,9 @@ const proyectos = [
     categoria: "Aplicación web full stack",
     titulo: "CargaQuer",
     descripcion:
-      "Aplicación web para gestionar reservas y sesiones de carga de vehículos eléctricos en puntos de carga municipales, con área de usuario y panel de administración.",
+      "Aplicación web Full Stack para gestionar reservas y sesiones de carga de vehículos eléctricos, con autenticación, base de datos, automatizaciones y panel de administración.",
     descripcionLarga:
-      "CargaQuer nace a partir de una necesidad real: organizar el uso compartido de cargadores municipales cuando varios usuarios necesitan utilizar las mismas tomas. Desarrollé una aplicación completa donde los usuarios pueden consultar cargadores, reservar franjas horarias, iniciar sesiones de carga y revisar su historial, mientras que la administración dispone de un panel independiente para gestionar usuarios, cargadores, validaciones e incidencias.",
+      "CargaQuer nace a partir de una necesidad real: organizar el uso compartido de cargadores municipales cuando varios usuarios necesitan utilizar las mismas tomas. Desarrollé la aplicación trabajando tanto el frontend como el backend, la autenticación y la base de datos. Los usuarios pueden consultar cargadores, reservar franjas horarias, iniciar y finalizar sesiones de carga y consultar su historial, mientras que la administración dispone de un área independiente para gestionar el servicio.",
     tecnologias: [
       "React",
       "TypeScript",
@@ -143,7 +143,7 @@ const proyectos = [
     ],
 
     trabajoRealizado:
-      "En este proyecto trabajé tanto el frontend como la parte de backend y base de datos. Organicé la aplicación con componentes, páginas, servicios y tipos en React y TypeScript, integré Supabase para autenticación y persistencia de datos, desarrollé la lógica de reservas y cargas, configuré funciones SQL y automatizaciones y preparé un panel administrativo independiente. También realicé numerosas pruebas de funcionamiento y adaptación responsive antes del despliegue final.",
+      "Desarrollé tanto el frontend como la parte de backend y base de datos. Organicé la aplicación mediante componentes, páginas, servicios y tipos con React y TypeScript, integré Supabase para autenticación y persistencia de datos y desarrollé la lógica de reservas y sesiones de carga. También trabajé con PostgreSQL, funciones SQL, RPC y Edge Functions para distintos procesos y automatizaciones, además de realizar las pruebas, la adaptación responsive y el despliegue final.",
 
     estadoDetalle:
       "La aplicación está planteada como una plataforma municipal completa con dos áreas diferenciadas: una para los usuarios del servicio y otra para la administración. El objetivo fue mantener una interfaz sencilla para el usuario mientras la lógica de reservas, estados y automatizaciones se gestiona internamente mediante Supabase.",

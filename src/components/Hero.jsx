@@ -6,17 +6,20 @@ function Hero() {
       <div className="contenedor hero__contenedor">
         <div className="hero__texto-zona">
           <p className="hero__saludo">
-            React | JavaScript (ES6+) | TypeScript | HTML5 | CSS3 | Git/GitHub
+            React | Angular | Vue | JavaScript | TypeScript | Java | PHP |
+            Python | C# | SQL
           </p>
 
           <h1 className="hero__nombre">Miguel Ángel Perucha</h1>
 
-          <h2 className="hero__titulo">Desarrollador Frontend Junior</h2>
+          <h2 className="hero__titulo">Desarrollador Full Stack</h2>
 
           <p className="hero__texto">
-            Desarrollo aplicaciones web claras, funcionales y responsive,
-            centradas en la experiencia de usuario. Actualmente estoy ampliando
-            mis conocimientos en frontend creando proyectos reales.
+            Desarrollo aplicaciones web completas, trabajando tanto la parte
+            visual como la lógica que hay detrás. Me gusta crear interfaces
+            cuidadas, intuitivas y responsive, pero también estructurar el
+            backend, trabajar con bases de datos y entender cómo funciona cada
+            parte de una aplicación.
           </p>
 
           <div className="hero__botones">

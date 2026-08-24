@@ -11,8 +11,9 @@ function Contacto() {
 
         <div className="contacto__contenido">
           <p>
-            Si quieres contactar conmigo para una oportunidad laboral, prácticas
-            o para ver más proyectos, puedes escribirme o visitar mis perfiles.
+            Si quieres contactar conmigo para una oportunidad laboral, conocer
+            mejor mi trabajo o hablar sobre algún proyecto, puedes escribirme
+            directamente o visitar mis perfiles.
           </p>
 
           <div className="contacto__iconos">
