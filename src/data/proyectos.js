@@ -114,7 +114,15 @@ const proyectos = [
     ],
     estado: "Completado",
     enlaceDemo: "https://cargaquer.netlify.app/",
-    imagen: "/imagenes/cargaquer.png",
+    imagen: "/imagenes/cargaquer/inicio.png",
+
+    imagenes: [
+      "/imagenes/cargaquer/inicio.png",
+      "/imagenes/cargaquer/cargadores.png",
+      "/imagenes/cargaquer/reservas.png",
+      "/imagenes/cargaquer/carga-activa.png",
+      "/imagenes/cargaquer/administracion.png",
+    ],
 
     objetivo:
       "Quería crear una solución completa para organizar el uso de cargadores municipales, evitando coincidencias entre usuarios y permitiendo gestionar desde una única plataforma las reservas, las sesiones de carga y la administración del servicio.",

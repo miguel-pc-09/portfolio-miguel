@@ -1,5 +1,8 @@
 import { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
+
+import VisorImagenes from "../components/VisorImagenes";
+
 import proyectos, {
   proyectosAcademicos,
   ideasProyectos,
@@ -13,6 +16,7 @@ function DetalleProyecto() {
     ...proyectosAcademicos,
     ...ideasProyectos,
   ];
+
   const proyecto = todosLosProyectos.find((item) => item.slug === slug);
 
   useEffect(() => {
@@ -44,6 +48,7 @@ function DetalleProyecto() {
         <div className="contenedor">
           <div className="detalle-proyecto__cabecera">
             <p className="seccion__mini">Proyecto no encontrado</p>
+
             <h1>Este proyecto no existe o todavía no está preparado.</h1>
 
             <Link to="/" className="boton boton--principal">
@@ -54,6 +59,14 @@ function DetalleProyecto() {
       </main>
     );
   }
+
+  // Prepara las imágenes disponibles del proyecto.
+  const imagenesProyecto =
+    proyecto.imagenes?.length > 0
+      ? proyecto.imagenes
+      : proyecto.imagen
+        ? [proyecto.imagen]
+        : [];
 
   return (
     <main className="seccion detalle-proyecto">
@@ -67,6 +80,7 @@ function DetalleProyecto() {
         <section className="detalle-proyecto__hero detalle-proyecto__reveal">
           <div className="detalle-proyecto__texto">
             <p className="seccion__mini">{proyecto.categoria}</p>
+
             <h1>{proyecto.titulo}</h1>
 
             <p className="detalle-proyecto__intro">
@@ -76,6 +90,7 @@ function DetalleProyecto() {
             <div className="detalle-proyecto__estado-demo">
               <div className="detalle-proyecto__estado-bloque">
                 <p className="detalle-proyecto__subtitulo-pequeno">Estado</p>
+
                 <span className="tarjeta-proyecto__estado">
                   {proyecto.estado}
                 </span>
@@ -123,8 +138,11 @@ function DetalleProyecto() {
 
           <div className="detalle-proyecto__visual">
             <div className="detalle-proyecto__mockup">
-              {proyecto.imagen ? (
-                <img src={proyecto.imagen} alt={proyecto.titulo} />
+              {imagenesProyecto.length > 0 ? (
+                <VisorImagenes
+                  imagenes={imagenesProyecto}
+                  titulo={proyecto.titulo}
+                />
               ) : (
                 <span>{proyecto.titulo}</span>
               )}
@@ -135,25 +153,33 @@ function DetalleProyecto() {
         <section className="detalle-proyecto__bloques-zigzag">
           <article className="detalle-proyecto__bloque-zigzag detalle-proyecto__bloque-zigzag--izquierda detalle-proyecto__reveal">
             <p className="detalle-proyecto__etiqueta">Objetivo</p>
+
             <h2>Qué quería conseguir con este proyecto</h2>
+
             <p>{proyecto.objetivo}</p>
           </article>
 
           <article className="detalle-proyecto__bloque-zigzag detalle-proyecto__bloque-zigzag--derecha detalle-proyecto__reveal">
             <p className="detalle-proyecto__etiqueta">Enfoque</p>
+
             <h2>Cómo está planteado</h2>
+
             <p>{proyecto.estadoDetalle}</p>
           </article>
 
           <article className="detalle-proyecto__bloque-zigzag detalle-proyecto__bloque-zigzag--izquierda detalle-proyecto__reveal">
             <p className="detalle-proyecto__etiqueta">Qué trabajé</p>
+
             <h2>Qué cuidé al diseñarlo</h2>
+
             <p>{proyecto.trabajoRealizado}</p>
           </article>
 
           <article className="detalle-proyecto__bloque-zigzag detalle-proyecto__bloque-zigzag--derecha detalle-proyecto__reveal">
             <p className="detalle-proyecto__etiqueta">Tecnologías</p>
+
             <h2>Cómo está construido</h2>
+
             <p style={{ whiteSpace: "pre-line" }}>
               {proyecto.tecnologiasDetalle}
             </p>
@@ -161,6 +187,7 @@ function DetalleProyecto() {
 
           <article className="detalle-proyecto__bloque-zigzag detalle-proyecto__bloque-zigzag--centrado detalle-proyecto__reveal">
             <p className="detalle-proyecto__etiqueta">Funcionalidades</p>
+
             <h2>Lo más importante que muestra este proyecto</h2>
 
             <ul className="detalle-proyecto__lista-libre">
