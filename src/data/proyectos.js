@@ -251,6 +251,56 @@ export const proyectosAcademicos = [
 
     estadoDetalle: "Proyecto terminado y adaptado para portfolio",
   },
+  {
+    id: 104,
+    slug: "mesacerca",
+    categoria: "Proyecto Final de Ciclo · DAW",
+    titulo: "MesaCerca",
+    descripcion:
+      "Proyecto Final de Ciclo desarrollado en equipo. Una plataforma para buscar restaurantes, reservar mesa, realizar pedidos anticipados y gestionar establecimientos desde distintos perfiles.",
+    descripcionLarga:
+      "MesaCerca nació como nuestro Proyecto Final de Ciclo de Desarrollo de Aplicaciones Web. La idea era crear una plataforma en la que los usuarios pudieran descubrir restaurantes, reservar mesa y dejar preparado su pedido antes de llegar, mientras que cada establecimiento disponía de su propio espacio de gestión. Dentro del equipo me encargué principalmente del frontend, desde la construcción de las interfaces hasta su conexión con los servicios del backend. También planteé la estructura inicial de la base de datos, que después fuimos ajustando durante el desarrollo.",
+    tecnologias: [
+      "Angular",
+      "TypeScript",
+      "Bootstrap",
+      "RxJS",
+      "Node.js",
+      "Express",
+      "MySQL",
+    ],
+    estado: "Completado",
+    imagen: "/imagenes/mesacerca/inicio.png",
+    imagenes: [
+      "/imagenes/mesacerca/inicio.png",
+      "/imagenes/mesacerca/restaurantes.png",
+      "/imagenes/mesacerca/detalle-restaurante.png",
+      "/imagenes/mesacerca/panel-usuario.png",
+      "/imagenes/mesacerca/panel-restaurante.png",
+    ],
+    objetivo:
+      "Crear una aplicación que reuniera la búsqueda de restaurantes, las reservas y los pedidos anticipados en un mismo sitio. Queríamos simplificar el proceso para los clientes y, al mismo tiempo, dar a los restaurantes un espacio desde el que gestionar su información, carta y actividad.",
+    funcionalidades: [
+      "Registro e inicio de sesión",
+      "Perfiles de cliente, restaurante y administrador",
+      "Búsqueda y filtrado de restaurantes",
+      "Información, carta y detalle de cada restaurante",
+      "Reservas por fecha, hora y número de comensales",
+      "Pedidos anticipados con selección de platos",
+      "Simulación del proceso de pago",
+      "Gestión de restaurantes y platos",
+      "Sistema de favoritos y reseñas",
+      "Subida y gestión de imágenes",
+      "Comunicación mediante API REST",
+      "Diseño adaptado a distintos tamaños de pantalla",
+    ],
+    trabajoRealizado:
+      "Mi parte del proyecto estuvo centrada sobre todo en el frontend. Construí las interfaces con Angular y TypeScript y trabajé la organización por componentes, los formularios, la navegación y la adaptación a distintos tamaños de pantalla. También conecté las diferentes vistas con la API utilizando HttpClient y RxJS. Además, creé la estructura inicial de la base de datos, que posteriormente fuimos modificando y completando entre mi compañero y yo a medida que avanzaba el proyecto. En el backend colaboré únicamente en tareas concretas, ya que esa parte recayó principalmente en otro miembro del equipo.",
+    estadoDetalle:
+      "El proyecto se realizó entre varios compañeros y repartimos el trabajo según las distintas partes de la aplicación. Yo asumí prácticamente todo el desarrollo del frontend y la parte visual, mientras que otro miembro del equipo se encargó principalmente del backend. Esto me permitió trabajar especialmente la conexión entre las pantallas, los servicios y la API, además de participar en algunos ajustes puntuales fuera del frontend.",
+    tecnologiasDetalle:
+      "Angular y TypeScript fueron la base del frontend.\nRxJS y HttpClient se utilizaron para conectar las pantallas con la API y trabajar con los datos.\nBootstrap y CSS propio se usaron para construir la interfaz y adaptarla a distintos dispositivos.\nSweetAlert2 se utilizó para mostrar avisos y confirmaciones.\nEl backend está desarrollado con Node.js y Express.\nLos datos se almacenan en una base de datos MySQL.\nJWT y bcrypt se utilizan para la autenticación y el tratamiento seguro de las contraseñas.\nCloudinary y Multer permiten subir y gestionar las imágenes de la aplicación.\nGit y GitHub se utilizaron para organizar el trabajo en equipo y mantener el control de versiones.",
+  },
 ];
 
 export const ideasProyectos = [
