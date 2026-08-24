@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 
 function VisorImagenes({ imagenes = [], titulo = "Imagen del proyecto" }) {
@@ -18,17 +18,17 @@ function VisorImagenes({ imagenes = [], titulo = "Imagen del proyecto" }) {
     setAbierto(false);
   }
 
-  function mostrarAnterior() {
+  const mostrarAnterior = useCallback(() => {
     setIndiceActual((indiceAnterior) =>
       indiceAnterior === 0 ? imagenes.length - 1 : indiceAnterior - 1,
     );
-  }
+  }, [imagenes.length]);
 
-  function mostrarSiguiente() {
+  const mostrarSiguiente = useCallback(() => {
     setIndiceActual((indiceAnterior) =>
       indiceAnterior === imagenes.length - 1 ? 0 : indiceAnterior + 1,
     );
-  }
+  }, [imagenes.length]);
 
   useEffect(() => {
     if (!abierto) {
@@ -60,7 +60,7 @@ function VisorImagenes({ imagenes = [], titulo = "Imagen del proyecto" }) {
 
       document.body.style.overflow = overflowAnterior;
     };
-  }, [abierto, imagenes.length]);
+  }, [abierto, imagenes.length, mostrarAnterior, mostrarSiguiente]);
 
   if (!imagenes.length || !imagenActual) {
     return null;
