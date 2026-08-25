@@ -302,6 +302,38 @@ export const proyectosAcademicos = [
     tecnologiasDetalle:
       "Angular y TypeScript fueron la base del frontend.\nRxJS y HttpClient se utilizaron para conectar las pantallas con la API y trabajar con los datos.\nBootstrap y CSS propio se usaron para construir la interfaz y adaptarla a distintos dispositivos.\nSweetAlert2 se utilizó para mostrar avisos y confirmaciones.\nEl backend está desarrollado con Node.js y Express.\nLos datos se almacenan en una base de datos MySQL.\nJWT y bcrypt se utilizan para la autenticación y el tratamiento seguro de las contraseñas.\nCloudinary y Multer permiten subir y gestionar las imágenes de la aplicación.\nGit y GitHub se utilizaron para organizar el trabajo en equipo y mantener el control de versiones.",
   },
+  {
+    id: 105,
+    slug: "blackjack-javascript",
+    categoria: "Proyecto académico / JavaScript",
+    titulo: "Blackjack",
+    descripcion:
+      "Juego web interactivo desarrollado con JavaScript aplicando programación orientada a objetos, manipulación del DOM y gestión de eventos.",
+    descripcionLarga:
+      "Proyecto académico en el que desarrollé una versión web del juego Blackjack utilizando JavaScript. La aplicación parte de una versión previa realizada en C# y traslada la lógica del juego a una interfaz gráfica en navegador. Trabajé la programación orientada a objetos mediante clases para cartas, baraja, jugadores y partida, además de la manipulación dinámica del DOM para representar las cartas y actualizar el estado del juego.",
+    tecnologias: ["JavaScript", "HTML5", "CSS3", "Bootstrap", "SweetAlert2"],
+    estado: "Completado",
+    enlaceDemo: "https://blackjack-miguel-perucha.netlify.app/",
+    imagen: "/imagenes/blackjack.png",
+    objetivo:
+      "Crear una versión web funcional de Blackjack aplicando los conceptos de programación orientada a objetos que había trabajado previamente en C#, pero adaptándolos a JavaScript y a una interfaz visual e interactiva.",
+    funcionalidades: [
+      "Generación y gestión de una baraja de 52 cartas",
+      "Sistema de puntuación para jugador y banca",
+      "Tratamiento especial del valor de los ases",
+      "Controles para pedir carta, plantarse y comenzar otra partida",
+      "Representación dinámica de cartas mediante manipulación del DOM",
+      "Gestión de eventos de usuario desde JavaScript",
+      "Interfaz responsive adaptada a distintos tamaños de pantalla",
+      "Avisos y resultados mediante SweetAlert2",
+    ],
+    trabajoRealizado:
+      "Trabajé la estructura del juego mediante clases JavaScript, separando responsabilidades entre cartas, baraja, jugador y lógica de la partida. También desarrollé la interacción con el DOM, los eventos de los botones, la actualización de marcadores y la representación visual de las cartas. Posteriormente adapté el diseño para que la interfaz se ajustara mejor a distintos tamaños de pantalla.",
+    estadoDetalle:
+      "El proyecto parte de un Blackjack desarrollado previamente en C# y posteriormente adaptado a entorno web. Esto me permitió trasladar conceptos de programación orientada a objetos a JavaScript y trabajar además la parte visual, los eventos y la interacción con el navegador.",
+    tecnologiasDetalle:
+      "JavaScript para la lógica del juego y la programación orientada a objetos.\nHTML5 para la estructura de la aplicación.\nCSS3 para la maquetación y adaptación responsive.\nBootstrap para algunos elementos de interfaz.\nSweetAlert2 para mostrar avisos y resultados de las partidas.\nNetlify para el despliegue de la versión pública.",
+  },
 ];
 
 export const ideasProyectos = [
