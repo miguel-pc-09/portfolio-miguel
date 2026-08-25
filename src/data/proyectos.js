@@ -270,6 +270,7 @@ export const proyectosAcademicos = [
       "MySQL",
     ],
     estado: "Completado",
+    enlaceDemo: "https://mesacerca-eight.vercel.app/",
     imagen: "/imagenes/mesacerca/inicio.png",
     imagenes: [
       "/imagenes/mesacerca/inicio.png",
