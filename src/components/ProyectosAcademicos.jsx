@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { proyectosAcademicos } from "../data/proyectos";
 import TarjetaProyecto from "./TarjetaProyecto";
 
@@ -5,9 +6,15 @@ function ProyectosAcademicos() {
   return (
     <section className="seccion proyectos animar" id="proyectos-academicos">
       <div className="contenedor">
-        <div className="seccion__encabezado">
-          <p className="seccion__mini">Trabajos de clase y universidad</p>
-          <h2>Proyectos académicos</h2>
+        <div className="seccion__encabezado seccion__encabezado--con-enlace">
+          <div>
+            <p className="seccion__mini">Trabajos de la formación</p>
+            <h2>Proyectos académicos</h2>
+          </div>
+
+          <Link to="/proyectos-academicos" className="seccion__ver-todos">
+            Ver todos →
+          </Link>
         </div>
 
         <div className="proyectos__grid">

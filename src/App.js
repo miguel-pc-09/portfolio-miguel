@@ -10,6 +10,7 @@ import DetalleProyecto from "./pages/DetalleProyecto";
 import DemoFormulario from "./pages/DemoFormulario";
 import DemoAppViajes from "./pages/DemoAppViajes";
 import DemoAppCargadores from "./pages/DemoAppCargadores";
+import ProyectosAcademicosPage from "./pages/ProyectosAcademicosPage";
 
 function ContenidoRutas({ temaOscuro, cambiarTema }) {
   const location = useLocation();
@@ -65,6 +66,10 @@ function ContenidoRutas({ temaOscuro, cambiarTema }) {
 
       <Routes>
         <Route path="/" element={<Inicio />} />
+        <Route
+          path="/proyectos-academicos"
+          element={<ProyectosAcademicosPage />}
+        />
         <Route path="/proyectos/:slug" element={<DetalleProyecto />} />
         <Route
           path="/demo/formulario-web-interactivo"

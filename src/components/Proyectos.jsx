@@ -6,7 +6,7 @@ function Proyectos() {
     <section className="seccion proyectos animar" id="proyectos">
       <div className="contenedor">
         <div className="seccion__encabezado">
-          <p className="seccion__mini">Proyectos desarrollados</p>
+          <p className="seccion__mini">Proyectos desarrollados por mí</p>
           <h2>Proyectos</h2>
         </div>
 
