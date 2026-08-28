@@ -18,12 +18,52 @@ function ProyectosAcademicosPage() {
 
   // Devuelve la sección principal de cada proyecto académico.
   const obtenerCategoriaProyecto = (proyecto) => {
+    if (proyecto.seccion) {
+      return proyecto.seccion;
+    }
+
+    if (proyecto.tecnologias.includes("Java")) {
+      return "java";
+    }
+
+    if (proyecto.tecnologias.includes("C#")) {
+      return "csharp";
+    }
+
     if (proyecto.tecnologias.includes("Angular")) {
       return "angular";
     }
 
+    if (proyecto.tecnologias.includes("React")) {
+      return "react";
+    }
+
+    if (proyecto.tecnologias.includes("Vue")) {
+      return "vue";
+    }
+
+    if (proyecto.tecnologias.includes("TypeScript")) {
+      return "typescript";
+    }
+
+    if (proyecto.tecnologias.includes("Python")) {
+      return "python";
+    }
+
+    if (proyecto.tecnologias.includes("PHP")) {
+      return "php";
+    }
+
     if (proyecto.tecnologias.includes("JavaScript")) {
       return "javascript";
+    }
+
+    if (
+      proyecto.tecnologias.includes("MySQL") ||
+      proyecto.tecnologias.includes("SQL") ||
+      proyecto.tecnologias.includes("PostgreSQL")
+    ) {
+      return "bases-datos";
     }
 
     if (
@@ -42,7 +82,7 @@ function ProyectosAcademicosPage() {
     <main className="academicos-page">
       <section className="academicos-page__cabecera animar">
         <div className="contenedor">
-          <p className="seccion__mini">Trabajos de clase y universidad</p>
+          <p className="seccion__mini">Trabajos de la formación</p>
 
           <h1>Proyectos académicos</h1>
 

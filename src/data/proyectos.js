@@ -159,6 +159,7 @@ export const proyectosAcademicos = [
   {
     id: 101,
     slug: "lumos-candles",
+    seccion: "html-css",
     categoria: "Proyecto académico / Interfaces",
     titulo: "LUMOS Candles",
     descripcion:
@@ -187,6 +188,7 @@ export const proyectosAcademicos = [
   {
     id: 102,
     slug: "planner-studio",
+    seccion: "html-css",
     categoria: "Proyecto académico / Interfaces",
     titulo: "Planner Studio",
     descripcion:
@@ -216,6 +218,7 @@ export const proyectosAcademicos = [
   {
     id: 103,
     slug: "tienda-online-javascript",
+    seccion: "javascript",
     categoria: "Proyecto académico / JavaScript",
     titulo: "Tienda online con JavaScript",
     descripcion:
@@ -254,6 +257,7 @@ export const proyectosAcademicos = [
   {
     id: 104,
     slug: "mesacerca",
+    seccion: "angular",
     categoria: "Proyecto Final de Ciclo · DAW",
     titulo: "MesaCerca",
     descripcion:
@@ -305,6 +309,7 @@ export const proyectosAcademicos = [
   {
     id: 105,
     slug: "blackjack-javascript",
+    seccion: "javascript",
     categoria: "Proyecto académico / JavaScript",
     titulo: "Blackjack",
     descripcion:
@@ -333,6 +338,587 @@ export const proyectosAcademicos = [
       "El proyecto parte de un Blackjack desarrollado previamente en C# y posteriormente adaptado a entorno web. Esto me permitió trasladar conceptos de programación orientada a objetos a JavaScript y trabajar además la parte visual, los eventos y la interacción con el navegador.",
     tecnologiasDetalle:
       "JavaScript para la lógica del juego y la programación orientada a objetos.\nHTML5 para la estructura de la aplicación.\nCSS3 para la maquetación y adaptación responsive.\nBootstrap para algunos elementos de interfaz.\nSweetAlert2 para mostrar avisos y resultados de las partidas.\nNetlify para el despliegue de la versión pública.",
+  },
+  {
+    id: 106,
+    slug: "bingo-java",
+    seccion: "java",
+    categoria: "Proyecto académico / Java",
+    titulo: "Bingo en Java",
+    descripcion:
+      "Primer ejercicio del primer trimestre de Programación: una simulación de Bingo desarrollada en Java mediante consola.",
+    descripcionLarga:
+      "Este fue el primer ejercicio del primer trimestre de la asignatura de Programación. La práctica consistía en desarrollar un Bingo en Java aplicando los primeros conceptos trabajados durante el curso. El programa genera los números con los que juega el usuario, realiza sorteos de forma aleatoria y comprueba los aciertos hasta completar la partida.",
+    tecnologias: ["Java"],
+    estado: "Completado",
+    imagen: "/imagenes/academicos/bingo-java.png",
+    enlaceGithub:
+      "https://github.com/miguel-pc-09/Evaluaciones-1-DAW/tree/main/Java/bingo",
+
+    profesor: "Borja Martín Herrera",
+    profesorEnlace: "https://www.linkedin.com/in/borja-mart%C3%ADn-herrera/",
+
+    objetivo:
+      "El objetivo del ejercicio era poner en práctica los primeros fundamentos de Java mediante un programa de consola con una lógica de juego sencilla, trabajando la generación de números, las condiciones, los bucles y el tratamiento de datos introducidos por el usuario.",
+
+    funcionalidades: [
+      "Generación aleatoria de los números asignados al jugador",
+      "Control de números repetidos",
+      "Introducción de una apuesta mediante consola",
+      "Predicción del número de aciertos",
+      "Sorteo automático de números",
+      "Comprobación de los números acertados",
+      "Finalización de la partida al completar todos los aciertos",
+      "Resumen final con el número total de sorteos realizados",
+    ],
+
+    trabajoRealizado:
+      "En este ejercicio trabajé principalmente la lógica de programación en Java. Utilicé arrays para almacenar los números, estructuras condicionales para realizar comprobaciones, bucles para controlar el desarrollo de la partida y Scanner para recoger los datos introducidos por el usuario desde la consola.",
+
+    estadoDetalle:
+      "El programa está planteado como una aplicación de consola. Al comenzar genera diez números para el jugador y, a partir de ahí, va realizando sorteos aleatorios hasta que todos ellos han aparecido. Cada vez que encuentra una coincidencia informa del acierto y al terminar muestra un pequeño resumen de la partida.",
+
+    tecnologiasDetalle:
+      "Java como lenguaje principal del ejercicio.\nScanner para recoger datos introducidos por el usuario mediante consola.\nArrays para almacenar y comprobar los números de la partida.\nMath.random para generar números aleatorios.\nBucles y estructuras condicionales para controlar la lógica del Bingo.",
+  },
+  {
+    id: 107,
+    slug: "competicion-java",
+    seccion: "java",
+    categoria: "Proyecto académico / Java",
+    titulo: "Competición de coches en Java",
+    descripcion:
+      "Ejercicio de Programación desarrollado en Java para simular una competición entre coches utilizando programación orientada a objetos.",
+
+    descripcionLarga:
+      "Ejercicio realizado durante el segundo trimestre de la asignatura de Programación, impartida por Borja Martín Herrera. El planteamiento inicial consistía en crear una carrera entre coches utilizando clases para representar los vehículos y la competición. A partir de esa base desarrollé una versión más completa con varios coches, diferentes circuitos, sistema de puntuación y una clasificación general del campeonato.",
+
+    tecnologias: ["Java"],
+    estado: "Completado",
+    imagen: "/imagenes/academicos/competicion-java.png",
+
+    enlaceGithub:
+      "https://github.com/miguel-pc-09/Evaluaciones-1-DAW/tree/main/Java/Competicion",
+
+    profesor: "Borja Martín Herrera",
+    profesorEnlace: "https://www.linkedin.com/in/borja-mart%C3%ADn-herrera/",
+
+    objetivo:
+      "El objetivo del ejercicio era trabajar la programación orientada a objetos en Java mediante clases que representaran coches y carreras, utilizando atributos, constructores, métodos y lógica de simulación.",
+
+    funcionalidades: [
+      "Selección de coche entre varios participantes",
+      "Garaje con diferentes marcas, modelos, cilindradas y potencias",
+      "Sistema de aceleración condicionado por la potencia del coche",
+      "Cálculo de distancia recorrida durante las carreras",
+      "Diez circuitos con distintas distancias y número de vueltas",
+      "Simulación automática de cada carrera",
+      "Ordenación de participantes según el resultado",
+      "Sistema de puntuación para los tres primeros clasificados",
+      "Clasificación general del campeonato",
+      "Posibilidad de volver a disputar el campeonato",
+    ],
+
+    trabajoRealizado:
+      "Desarrollé completamente el ejercicio utilizando varias clases Java. Organicé la lógica entre Coche, Carrera y Campeonato, además de una clase Entrada encargada de la interacción mediante consola. Trabajé con arrays de objetos, constructores, métodos, bucles, estructuras condicionales, ordenación mediante Comparator y generación de valores aleatorios.",
+
+    estadoDetalle:
+      "La aplicación comienza mostrando un conjunto de coches entre los que el usuario puede elegir. Después se inicia un campeonato compuesto por diferentes circuitos. En cada carrera los coches recorren una distancia calculada mediante aceleraciones sucesivas, se ordenan según su resultado y los tres primeros reciben puntos. Al finalizar todos los circuitos se muestra la clasificación general del campeonato.",
+
+    tecnologiasDetalle:
+      "Java como lenguaje principal del ejercicio.\nProgramación orientada a objetos mediante las clases Coche, Carrera y Campeonato.\nArrays para almacenar coches y circuitos.\nComparator y Arrays.sort para ordenar resultados y clasificaciones.\nMath.random para generar las aceleraciones de los vehículos.\nScanner para recoger la elección del usuario mediante consola.",
+  },
+  {
+    id: 108,
+    slug: "biblioteca-java",
+    seccion: "java",
+    categoria: "Proyecto académico / Java",
+    titulo: "Biblioteca en Java",
+    descripcion:
+      "Aplicación de consola desarrollada en Java para gestionar el catálogo de una biblioteca mediante distintos tipos de libros y operaciones de alta, búsqueda y consulta.",
+
+    descripcionLarga:
+      "Ejercicio realizado durante el tercer trimestre de la asignatura de Programación, impartida por Borja Martín Herrera. La práctica consistía en desarrollar una aplicación capaz de gestionar el catálogo de una biblioteca, permitiendo crear el catálogo, añadir y eliminar libros, buscar ejemplares por ISBN, mostrar todos los libros disponibles y guardar la información en un fichero.",
+
+    tecnologias: ["Java"],
+    estado: "Completado",
+    imagen: "/imagenes/academicos/biblioteca-java.png",
+
+    enlaceGithub:
+      "https://github.com/miguel-pc-09/Evaluaciones-1-DAW/tree/main/Java/Biblioteca",
+
+    profesor: "Borja Martín Herrera",
+    profesorEnlace: "https://www.linkedin.com/in/borja-mart%C3%ADn-herrera/",
+
+    objetivo:
+      "El objetivo del ejercicio era seguir trabajando la programación orientada a objetos en Java mediante una aplicación más completa, incorporando distintos tipos de libros, gestión de un catálogo, excepciones y persistencia de datos en fichero.",
+
+    funcionalidades: [
+      "Creación de una biblioteca y de su catálogo",
+      "Configuración de la capacidad máxima del catálogo",
+      "Alta de distintos tipos de libros",
+      "Eliminación de libros del catálogo",
+      "Búsqueda de libros mediante ISBN",
+      "Consulta de todos los libros almacenados",
+      "Control de libros duplicados y capacidad disponible",
+      "Gestión de errores mediante excepciones",
+      "Guardado del catálogo en un fichero",
+      "Carga del catálogo previamente guardado",
+      "Menú interactivo mediante consola",
+    ],
+
+    trabajoRealizado:
+      "Desarrollé completamente el ejercicio organizando la aplicación mediante distintas clases y tipos de libro. Trabajé la creación y gestión del catálogo, las operaciones de búsqueda y modificación, la validación de datos, el tratamiento de excepciones y la lectura y escritura de información en fichero. También preparé un menú por consola para que todas las operaciones pudieran realizarse de forma interactiva.",
+
+    estadoDetalle:
+      "La aplicación comienza creando una biblioteca y permite definir la capacidad de su catálogo. A partir de ahí el usuario puede añadir libros de diferentes tipos, eliminarlos, buscarlos mediante su ISBN, consultar todo el contenido almacenado y guardar o recuperar el catálogo desde un fichero. Cada tipo de libro dispone además de información propia además de los datos comunes.",
+
+    tecnologiasDetalle:
+      "Java como lenguaje principal del ejercicio.\nProgramación orientada a objetos para representar la biblioteca, el catálogo y los diferentes tipos de libro.\nHerencia y especialización para trabajar con distintos tipos de publicaciones.\nScanner para la interacción mediante consola.\nExcepciones personalizadas y RuntimeException para controlar distintas situaciones de error.\nSerialización y ficheros para guardar y recuperar el catálogo.\nArrays o estructuras de almacenamiento para gestionar los libros disponibles.",
+  },
+  {
+    id: 109,
+    slug: "calculadora-csharp",
+    seccion: "csharp",
+    categoria: "Proyecto académico / C#",
+    titulo: "Calculadora en C#",
+    descripcion:
+      "Primer ejercicio de C# basado en una calculadora de consola con validación de datos y un menú iterativo de operaciones.",
+
+    descripcionLarga:
+      "Ejercicio realizado durante la asignatura de Fundamentos de Programación, impartida por Borja Martín Herrera. La práctica consistía en desarrollar una calculadora por consola que solicitara dos números positivos y permitiera realizar operaciones de suma, resta, multiplicación y división mediante un menú que se repetía hasta que el usuario decidiera salir.",
+
+    tecnologias: ["C#"],
+    estado: "Completado",
+    imagen: "/imagenes/academicos/calculadora-csharp.png",
+
+    enlaceGithub:
+      "https://github.com/miguel-pc-09/Evaluaciones-1-DAW/tree/main/CSharp/Calculadora",
+
+    profesor: "Borja Martín Herrera",
+    profesorEnlace: "https://www.linkedin.com/in/borja-mart%C3%ADn-herrera/",
+
+    objetivo:
+      "El objetivo del ejercicio era practicar los fundamentos de C# mediante entrada de datos por consola, estructuras condicionales, bucles y operaciones matemáticas básicas.",
+
+    funcionalidades: [
+      "Menú iterativo de operaciones",
+      "Suma de dos números",
+      "Resta de dos números",
+      "Multiplicación de dos números",
+      "División de dos números",
+      "Validación de números positivos",
+      "Control de división entre cero",
+      "Opción para salir de la aplicación",
+      "Interacción completa mediante consola",
+    ],
+
+    trabajoRealizado:
+      "Desarrollé completamente la lógica de la calculadora mediante C#. Trabajé la lectura de datos desde consola, la validación de los números introducidos, las estructuras condicionales para seleccionar cada operación y un bucle que mantiene activo el menú hasta que el usuario selecciona la opción de salir.",
+
+    estadoDetalle:
+      "La aplicación comienza mostrando un menú con las operaciones disponibles. Cuando el usuario selecciona una operación, solicita los dos números necesarios, realiza el cálculo y muestra el resultado. Después vuelve automáticamente al menú principal hasta que se selecciona la opción de salir.",
+
+    tecnologiasDetalle:
+      "C# como lenguaje principal del ejercicio.\nConsole.ReadLine y Console.WriteLine para la interacción mediante consola.\nEstructuras condicionales para gestionar las distintas operaciones.\nBucles para mantener el menú activo.\nConversión y validación de datos introducidos por el usuario.",
+  },
+  {
+    id: 110,
+    slug: "app-entrenamiento-csharp",
+    seccion: "csharp",
+    categoria: "Proyecto académico / C#",
+    titulo: "App de Entrenamiento",
+    descripcion:
+      "Aplicación de consola desarrollada en C# para gestionar usuarios, sesiones y entrenamientos mediante menús interactivos.",
+
+    descripcionLarga:
+      "Ejercicio realizado durante el segundo trimestre de la asignatura de Fundamentos de Programación, impartida por Borja Martín Herrera. La práctica consistía en desarrollar una aplicación de consola que permitiera registrar usuarios, iniciar sesión y gestionar sus entrenamientos. Una vez dentro de la sesión, el usuario puede añadir entrenamientos indicando la distancia recorrida y el tiempo empleado, consultar el historial, eliminar los entrenamientos registrados y cerrar sesión.",
+
+    tecnologias: ["C#"],
+    estado: "Completado",
+    imagen: "/imagenes/academicos/app-entrenamiento-csharp.png",
+
+    enlaceGithub:
+      "https://github.com/miguel-pc-09/Evaluaciones-1-DAW/tree/main/CSharp/AppEntrenamiento",
+
+    profesor: "Borja Martín Herrera",
+    profesorEnlace: "https://www.linkedin.com/in/borja-mart%C3%ADn-herrera/",
+
+    objetivo:
+      "El objetivo del ejercicio era seguir trabajando los fundamentos de C# mediante una aplicación con varias clases, gestión de usuarios, sesiones y datos asociados a cada usuario.",
+
+    funcionalidades: [
+      "Registro de usuarios mediante correo y contraseña",
+      "Control para evitar registrar usuarios duplicados",
+      "Inicio de sesión de usuarios",
+      "Registro de entrenamientos con distancia y tiempo",
+      "Consulta del historial de entrenamientos",
+      "Cálculo de distancia y tiempo acumulados",
+      "Eliminación de los entrenamientos registrados",
+      "Cierre de sesión y regreso al menú principal",
+      "Menús iterativos mediante consola",
+    ],
+
+    trabajoRealizado:
+      "Desarrollé completamente el ejercicio separando la aplicación en varias clases. Utilicé una clase para gestionar los usuarios y sus sesiones y otra para almacenar y controlar los entrenamientos. Trabajé con colecciones, métodos, bucles, estructuras condicionales y entrada de datos mediante consola.",
+
+    estadoDetalle:
+      "La aplicación comienza con un menú principal desde el que se pueden registrar usuarios o iniciar sesión. Cada usuario dispone de sus propios entrenamientos y, una vez dentro de la sesión, puede añadir nuevos registros, consultar el historial, eliminar los datos almacenados o volver al menú principal.",
+
+    tecnologiasDetalle:
+      "C# como lenguaje principal del ejercicio.\nDictionary para almacenar usuarios y relacionarlos con sus entrenamientos.\nList para guardar los registros de distancia y tiempo.\nProgramación orientada a objetos mediante las clases Agenda y Entreno.\nConsole.ReadLine y Console.WriteLine para la interacción mediante consola.\nBucles y estructuras condicionales para gestionar los diferentes menús.",
+  },
+  {
+    id: 111,
+    slug: "gestor-tareas-csharp",
+    seccion: "csharp",
+    categoria: "Proyecto académico / C#",
+    titulo: "Gestor de tareas en C#",
+    descripcion:
+      "Aplicación de consola desarrollada en C# para gestionar tareas personales mediante creación, búsqueda, eliminación e importación y exportación de datos.",
+
+    descripcionLarga:
+      "Ejercicio realizado durante el tercer trimestre de la asignatura de Fundamentos de Programación, impartida por Borja Martín Herrera. La práctica consistía en desarrollar una aplicación de consola para gestionar tareas personales mediante un menú interactivo. El programa permite crear tareas con diferentes tipos y prioridades, buscarlas por categoría, eliminarlas mediante su identificador y guardar o recuperar la información utilizando un fichero de texto.",
+
+    tecnologias: ["C#"],
+    estado: "Completado",
+    imagen: "/imagenes/academicos/gestor-tareas-csharp.png",
+
+    enlaceGithub:
+      "https://github.com/miguel-pc-09/Evaluaciones-1-DAW/tree/main/CSharp/AppTareas",
+
+    profesor: "Borja Martín Herrera",
+    profesorEnlace: "https://www.linkedin.com/in/borja-mart%C3%ADn-herrera/",
+
+    objetivo:
+      "El objetivo del ejercicio era seguir trabajando los fundamentos de C# mediante una aplicación más completa, utilizando programación orientada a objetos, colecciones, enumeraciones y lectura y escritura de ficheros para gestionar información de forma persistente.",
+
+    funcionalidades: [
+      "Creación de tareas mediante consola",
+      "Asignación automática de un identificador único",
+      "Nombre y descripción para cada tarea",
+      "Clasificación mediante los tipos personal, trabajo y ocio",
+      "Uso de Enum para controlar los tipos de tarea disponibles",
+      "Asignación de prioridad mediante un valor booleano",
+      "Búsqueda de tareas por tipo",
+      "Eliminación de tareas mediante su identificador",
+      "Exportación de las tareas al fichero tareas.txt",
+      "Importación de tareas desde tareas.txt",
+      "Menú iterativo para realizar todas las operaciones",
+    ],
+
+    trabajoRealizado:
+      "Desarrollé completamente la aplicación organizando la lógica en distintas clases. Utilicé una lista de objetos para gestionar las tareas en memoria, un Enum para limitar los tipos disponibles y diferentes métodos para crear, buscar, eliminar, importar y exportar tareas. También trabajé con ficheros de texto para guardar la información y poder recuperarla posteriormente.",
+
+    estadoDetalle:
+      "La aplicación funciona mediante un menú de consola desde el que el usuario puede gestionar sus tareas. Cada tarea dispone de un identificador, nombre, descripción, tipo y prioridad. Los datos pueden exportarse a un fichero tareas.txt y volver a importarse posteriormente, permitiendo recuperar las tareas almacenadas. La aplicación también permite filtrar las tareas por tipo y eliminar una concreta utilizando su identificador.",
+
+    tecnologiasDetalle:
+      "C# como lenguaje principal del ejercicio.\nProgramación orientada a objetos para organizar las tareas y las operaciones de la aplicación.\nList<T> para almacenar y gestionar las tareas en memoria.\nEnum para limitar los tipos de tarea a personal, trabajo y ocio.\nFile, StreamWriter y lectura de ficheros para exportar e importar los datos mediante tareas.txt.\nConsole.ReadLine y Console.WriteLine para la interacción con el usuario.\nBucles y estructuras condicionales para gestionar el menú y las distintas operaciones.",
+  },
+  {
+    id: 112,
+    slug: "blackjack-csharp",
+    seccion: "csharp",
+    categoria: "Proyecto académico / C#",
+    titulo: "Blackjack en C#",
+    descripcion:
+      "Ejercicio extra de Fundamentos de Programación desarrollado en C# para simular una partida de Blackjack mediante programación orientada a objetos.",
+
+    descripcionLarga:
+      "Ejercicio extra realizado en la asignatura de Fundamentos de Programación, impartida por Borja Martín Herrera. El proyecto consistía en desarrollar una versión de Blackjack por consola utilizando C#. La aplicación gestiona una baraja completa, las manos del jugador y del crupier, el valor de las cartas y las diferentes situaciones que pueden producirse durante una partida.",
+
+    tecnologias: ["C#"],
+    estado: "Completado",
+    imagen: "/imagenes/academicos/blackjack-csharp.png",
+
+    enlaceGithub:
+      "https://github.com/miguel-pc-09/Evaluaciones-1-DAW/tree/main/CSharp/BLACKFINALJACK",
+
+    profesor: "Borja Martín Herrera",
+    profesorEnlace: "https://www.linkedin.com/in/borja-mart%C3%ADn-herrera/",
+
+    objetivo:
+      "El objetivo del ejercicio era aplicar programación orientada a objetos en C# mediante el desarrollo de un juego completo, separando las responsabilidades entre cartas, baraja, jugadores y lógica de la partida.",
+
+    funcionalidades: [
+      "Baraja completa formada por 52 cartas",
+      "Barajado aleatorio de las cartas",
+      "Reparto inicial al jugador y al crupier",
+      "Carta oculta del crupier durante el turno del jugador",
+      "Opción de pedir carta o plantarse",
+      "Cálculo automático del valor de cada mano",
+      "Tratamiento especial del valor de los ases",
+      "Turno automático del crupier hasta alcanzar al menos 17 puntos",
+      "Detección de victoria, derrota y empate",
+      "Posibilidad de jugar varias partidas seguidas",
+    ],
+
+    trabajoRealizado:
+      "El ejercicio se realizó en equipo. La aplicación está organizada mediante distintas clases para representar las cartas, la baraja, los jugadores y la propia partida de Blackjack. En el desarrollo se trabajaron listas de objetos, métodos, propiedades, generación aleatoria, estructuras condicionales y la separación de responsabilidades entre clases.",
+
+    estadoDetalle:
+      "La partida comienza solicitando el nombre del jugador y repartiendo dos cartas tanto al usuario como al crupier. Durante su turno, el jugador puede pedir nuevas cartas o plantarse mientras el programa calcula automáticamente el valor de su mano. Después juega el crupier siguiendo sus propias reglas y finalmente se comparan las puntuaciones para determinar el resultado.",
+
+    tecnologiasDetalle:
+      "C# como lenguaje principal del ejercicio.\nProgramación orientada a objetos mediante las clases Carta, Baraja, Jugador y Blackjack.\nList<T> para almacenar las cartas de la baraja y las manos de los jugadores.\nLINQ para realizar cálculos y trabajar con las colecciones.\nRandom para barajar las cartas.\nPropiedades y métodos para encapsular la lógica de cada clase.\nConsole.ReadLine y Console.WriteLine para la interacción mediante consola.",
+  },
+  {
+    id: 113,
+    slug: "curriculum-html",
+    seccion: "html-css",
+    categoria: "Proyecto académico / HTML / CSS",
+    titulo: "Formulario Currículum Vitae",
+    descripcion:
+      "Formulario web desarrollado como primer ejercicio de Lenguaje de Marcas para recopilar la información necesaria de un currículum mediante distintos controles HTML.",
+
+    descripcionLarga:
+      "Ejercicio realizado durante el primer trimestre de la asignatura de Lenguaje de Marcas, impartida por José David Ventura Roldán. La práctica consistía en diseñar y desarrollar un formulario HTML orientado a la creación de un currículum vitae, utilizando distintos tipos de campos para recopilar información personal, académica, laboral y de contacto.",
+
+    tecnologias: ["HTML5", "CSS3"],
+    estado: "Completado",
+    imagen: "/imagenes/academicos/curriculum-html.png",
+
+    enlaceGithub:
+      "https://github.com/miguel-pc-09/Evaluaciones-1-DAW/tree/main/HTML/Curriculum",
+
+    profesor: "José David Ventura Roldán",
+    profesorEnlace: "https://www.linkedin.com/in/josedavidventuraroldan/",
+
+    objetivo:
+      "El objetivo del ejercicio era aprender a construir formularios HTML completos, utilizar diferentes tipos de controles de entrada y comprender la importancia de validar correctamente la información introducida por el usuario.",
+
+    funcionalidades: [
+      "Formulario dividido en diferentes bloques mediante fieldset",
+      "Campos para nombre, apellidos y DNI",
+      "Selección de género mediante botones de opción",
+      "Selector de fecha de nacimiento",
+      "Campos específicos para teléfono y correo electrónico",
+      "Áreas de texto para experiencia laboral y educación",
+      "Selector de idioma preferido",
+      "Datos de contacto de emergencia",
+      "Aceptación obligatoria de términos y condiciones",
+      "Validación básica mediante atributos HTML",
+      "Página independiente de confirmación tras enviar el formulario",
+    ],
+
+    trabajoRealizado:
+      "Desarrollé la estructura completa del formulario utilizando HTML y organicé la información en diferentes apartados para facilitar su cumplimentación. Trabajé con distintos tipos de input, etiquetas, listas de selección, áreas de texto, botones de opción y validaciones nativas del navegador. También utilicé CSS para personalizar la presentación del formulario y aplicar una imagen de fondo.",
+
+    estadoDetalle:
+      "La página presenta un formulario de currículum dividido en datos personales, información de interés y contacto de emergencia. Algunos campos son obligatorios y utilizan las validaciones propias de HTML. Al finalizar, el usuario debe aceptar los términos y condiciones antes de poder enviar el formulario.",
+
+    tecnologiasDetalle:
+      "HTML5 para estructurar el formulario y definir los diferentes tipos de entrada.\nCSS3 para trabajar la apariencia visual, la distribución del contenido y la imagen de fondo.\nElementos form, fieldset y legend para organizar la información.\nInputs de tipo text, date, tel, email, radio y checkbox para recopilar distintos tipos de datos.\nTextarea y select para introducir información más extensa y seleccionar opciones.\nValidaciones HTML mediante atributos como required y maxlength.",
+  },
+  {
+    id: 114,
+    slug: "formulario-registro-html",
+    seccion: "html-css",
+    categoria: "Proyecto académico / HTML / CSS",
+    titulo: "Formulario de registro",
+    descripcion:
+      "Formulario de registro desarrollado con HTML5 y CSS3, incorporando validaciones, inicio de sesión y navegación entre distintas páginas.",
+
+    descripcionLarga:
+      "Ejercicio realizado durante el segundo trimestre de la asignatura de Lenguaje de Marcas, impartida por José David Ventura Roldán. La práctica consistía en desarrollar un formulario de registro de usuarios utilizando HTML5 y CSS3, aplicando validaciones nativas del navegador y preparando un flujo de navegación que, después del registro, llevara a una pantalla de inicio de sesión y posteriormente a otra página.",
+
+    tecnologias: ["HTML5", "CSS3"],
+    estado: "Completado",
+    imagen: "/imagenes/academicos/formulario-registro-html.png",
+
+    enlaceGithub:
+      "https://github.com/miguel-pc-09/Evaluaciones-1-DAW/tree/main/HTML/Formulario",
+
+    profesor: "José David Ventura Roldán",
+    profesorEnlace: "https://www.linkedin.com/in/josedavidventuraroldan/",
+
+    objetivo:
+      "El objetivo del ejercicio era profundizar en la creación de formularios HTML, trabajar las validaciones disponibles en HTML5 y mejorar la presentación visual mediante CSS3, además de conectar distintas páginas para simular un proceso de registro e inicio de sesión.",
+
+    funcionalidades: [
+      "Formulario de registro de usuarios",
+      "Campos para nombre, apellidos y DNI",
+      "Selección de género mediante botones de opción",
+      "Selector de fecha de nacimiento",
+      "Listado desplegable de países",
+      "Validación de correo electrónico mediante input de tipo email",
+      "Contraseña con un mínimo de ocho caracteres",
+      "Validación adicional de mayúsculas y caracteres especiales",
+      "Campo de confirmación de contraseña",
+      "Aceptación obligatoria de términos y condiciones",
+      "Redirección desde el registro a una página de inicio de sesión",
+      "Redirección desde el inicio de sesión a otra página del proyecto",
+      "Diseño personalizado mediante CSS3",
+    ],
+
+    trabajoRealizado:
+      "Desarrollé la estructura del formulario de registro utilizando diferentes controles HTML y validaciones nativas del navegador. También preparé una página independiente para el inicio de sesión y conecté ambas pantallas mediante formularios y navegación entre páginas. La parte visual se trabajó con CSS, modificando la distribución, los campos, los botones y el fondo para mejorar la presentación respecto al ejercicio anterior.",
+
+    estadoDetalle:
+      "El flujo comienza con un formulario de inscripción en el que el usuario introduce sus datos personales, correo y contraseña. Los campos utilizan distintas validaciones HTML5 y, tras completar correctamente el formulario, se accede a una pantalla de inicio de sesión. Desde esta segunda pantalla se continúa hacia otra página del proyecto, simulando un proceso básico de registro y acceso.",
+
+    tecnologiasDetalle:
+      "HTML5 para estructurar los formularios y las distintas páginas del proyecto.\nCSS3 para personalizar la apariencia visual, los campos, botones y fondos.\nInputs de tipo text, email, password, date, radio y checkbox para recoger y validar información.\nSelect para seleccionar el país de residencia.\nAtributos required, minlength y pattern para aplicar validaciones HTML5.\nForm y action para conectar el registro, el inicio de sesión y las diferentes páginas del proyecto.",
+  },
+  {
+    id: 115,
+    slug: "formulario-teclado-virtual",
+    seccion: "html-css",
+    categoria: "Proyecto académico / HTML / CSS / JavaScript",
+    titulo: "Formulario con teclado virtual",
+    descripcion:
+      "Formulario de registro interactivo con teclado virtual desarrollado mediante HTML, CSS y JavaScript para introducir contraseñas de forma visual.",
+
+    descripcionLarga:
+      "Ejercicio realizado durante el tercer trimestre de la asignatura de Lenguaje de Marcas, impartida por José David Ventura Roldán. La práctica consistía en desarrollar una interfaz de registro de usuarios que incorporara un teclado virtual funcional para introducir las contraseñas, además de distintas validaciones realizadas mediante JavaScript.",
+
+    tecnologias: ["HTML5", "CSS3", "JavaScript"],
+    estado: "Completado",
+    imagen: "/imagenes/academicos/formulario-teclado-virtual.png",
+
+    enlaceGithub:
+      "https://github.com/miguel-pc-09/Evaluaciones-1-DAW/tree/main/HTML/FormularioConJS",
+
+    profesor: "José David Ventura Roldán",
+    profesorEnlace: "https://www.linkedin.com/in/josedavidventuraroldan/",
+
+    objetivo:
+      "El objetivo del ejercicio era combinar HTML, CSS y JavaScript para crear un formulario de registro más interactivo, incorporando un teclado virtual y validaciones personalizadas antes de completar el registro.",
+
+    funcionalidades: [
+      "Formulario de registro de usuarios",
+      "Campo para nombre de usuario",
+      "Validación del formato del correo electrónico",
+      "Campos de contraseña y confirmación",
+      "Teclado virtual con números del 0 al 9",
+      "Teclado virtual con letras mayúsculas",
+      "Caracteres especiales @, punto, guion bajo y guion",
+      "Botón de retroceso para borrar caracteres",
+      "Escritura mediante teclado virtual únicamente en los campos de contraseña",
+      "Botones para mostrar u ocultar las contraseñas",
+      "Comprobación de campos obligatorios",
+      "Validación para comprobar que ambas contraseñas coinciden",
+      "Mensaje de confirmación cuando el registro es correcto",
+    ],
+
+    trabajoRealizado:
+      "Desarrollé la estructura del formulario con HTML y trabajé su presentación visual mediante CSS. La parte principal del ejercicio fue la lógica en JavaScript, donde programé el teclado virtual, la selección del campo de contraseña activo, la introducción y eliminación de caracteres, el cambio entre contraseña visible y oculta y las validaciones necesarias antes de permitir el registro.",
+
+    estadoDetalle:
+      "La aplicación presenta un formulario de registro acompañado de un teclado virtual. El usuario puede seleccionar uno de los campos de contraseña y escribir utilizando las teclas mostradas en pantalla. JavaScript controla qué campo está activo, añade o elimina caracteres, permite mostrar u ocultar las contraseñas y comprueba que todos los datos sean válidos antes de completar el registro.",
+
+    tecnologiasDetalle:
+      "HTML5 para estructurar el formulario, sus campos y los botones del teclado virtual.\nCSS3 para diseñar la interfaz, el formulario, los campos y las teclas.\nJavaScript para gestionar la interacción con el teclado virtual y los campos de contraseña.\nEventos click para detectar las pulsaciones de las teclas y botones.\nManipulación del DOM para modificar los valores y atributos de los campos.\nValidaciones mediante JavaScript para comprobar campos vacíos, formato de correo y coincidencia de contraseñas.",
+  },
+  {
+    id: 116,
+    slug: "modelo-entidad-relacion",
+    seccion: "bases-datos",
+    categoria: "Proyecto académico / Bases de datos",
+    titulo: "Modelo Entidad-Relación de una red social",
+    descripcion:
+      "Modelo Entidad-Relación diseñado para representar la estructura de datos de una red social mediante usuarios, publicaciones, comentarios, fotografías y relaciones entre entidades.",
+
+    descripcionLarga:
+      "Ejercicio realizado durante el primer trimestre de la asignatura de Bases de Datos, impartida por Víctor Manuel Bullido Alonso. El trabajo consistió en diseñar un modelo Entidad-Relación para representar la información y las relaciones principales de una red social. El diagrama organiza los datos de usuarios, amistades, publicaciones, comentarios y fotografías, incluyendo sus atributos y cardinalidades.",
+
+    tecnologias: ["Bases de datos", "Modelo E-R", "draw.io"],
+    estado: "Completado",
+    imagen: "/imagenes/academicos/modelo-entidad-relacion.png",
+
+    enlaceGithub:
+      "https://github.com/miguel-pc-09/Evaluaciones-1-DAW/tree/main/BBDD/ModeloEntidadRelacion",
+
+    profesor: "Víctor Manuel Bullido Alonso",
+    profesorEnlace:
+      "https://www.linkedin.com/in/v%C3%ADctor-manuel-bullido-alonso-418579111/",
+
+    objetivo:
+      "El objetivo del ejercicio fue practicar el modelado de datos mediante diagramas Entidad-Relación, identificando entidades, atributos, relaciones y cardinalidades antes de trasladar una estructura de información a una base de datos.",
+
+    funcionalidades: [
+      "Representación de usuarios y sus datos principales",
+      "Modelado de relaciones de amistad entre usuarios",
+      "Representación de publicaciones realizadas por los usuarios",
+      "Gestión conceptual de comentarios asociados a publicaciones",
+      "Representación de fotografías vinculadas a publicaciones",
+      "Relación de etiquetado entre usuarios y publicaciones",
+      "Definición de atributos para cada entidad",
+      "Identificación de claves principales",
+      "Definición de cardinalidades entre las diferentes entidades",
+    ],
+
+    trabajoRealizado:
+      "Diseñé el modelo identificando las entidades necesarias para representar una red social y definiendo sus principales atributos y relaciones. Trabajé especialmente las cardinalidades y la forma en la que usuarios, publicaciones, comentarios, fotografías y amistades se relacionan entre sí. El diagrama se realizó mediante draw.io.",
+
+    estadoDetalle:
+      "El modelo representa una red social en la que los usuarios pueden mantener relaciones de amistad, realizar publicaciones, escribir comentarios y aparecer etiquetados. Las publicaciones pueden contener fotografías y cada una de las entidades dispone de sus propios atributos identificadores y datos asociados.",
+
+    tecnologiasDetalle:
+      "Modelo Entidad-Relación para representar de forma conceptual la estructura de los datos.\ndraw.io para crear y organizar visualmente el diagrama.\nEntidades y atributos para definir los diferentes elementos del sistema.\nClaves identificadoras para distinguir cada registro.\nRelaciones y cardinalidades para representar cómo se conectan los distintos elementos de la red social.",
+  },
+  {
+    id: 117,
+    slug: "normalizacion-3fn-bbdd",
+    seccion: "bases-datos",
+    categoria: "Proyecto académico / Bases de datos",
+    titulo: "Normalización de base de datos hasta 3FN",
+    descripcion:
+      "Ejercicio de Bases de Datos centrado en normalizar una tabla de alquiler de vehículos hasta tercera forma normal y trasladar el resultado a una base de datos relacional.",
+
+    descripcionLarga:
+      "Ejercicio realizado durante el segundo trimestre de la asignatura de Bases de Datos, impartida por Víctor Manuel Bullido Alonso. La práctica partía de un conjunto de datos sobre clientes, vehículos, fábricas y alquileres almacenados inicialmente en una única tabla. El trabajo consistía en analizar las dependencias existentes, normalizar la información progresivamente hasta tercera forma normal y, a partir del modelo obtenido, crear la estructura de la base de datos mediante SQL e insertar los datos correspondientes.",
+
+    tecnologias: [
+      "Bases de datos",
+      "SQL",
+      "MySQL",
+      "XAMPP",
+      "Excel",
+      "draw.io",
+    ],
+    estado: "Completado",
+    imagen: "/imagenes/academicos/normalizacion-3fn-bbdd.png",
+
+    imagenes: [
+      "/imagenes/academicos/normalizacion-3fn-bbdd.png",
+      "/imagenes/academicos/normalizacion-3fn-bbdd-1fn-2fn.png",
+      "/imagenes/academicos/normalizacion-3fn-bbdd-3fn.png",
+    ],
+
+    enlaceGithub:
+      "https://github.com/miguel-pc-09/Evaluaciones-1-DAW/tree/main/BBDD/Normalizacion3FN",
+
+    profesor: "Víctor Manuel Bullido Alonso",
+    profesorEnlace:
+      "https://www.linkedin.com/in/v%C3%ADctor-manuel-bullido-alonso-418579111/",
+
+    objetivo:
+      "El objetivo del ejercicio era aprender a detectar dependencias entre atributos, aplicar las diferentes formas normales hasta alcanzar la tercera forma normal y convertir el modelo resultante en una base de datos relacional con sus correspondientes claves primarias y foráneas.",
+
+    funcionalidades: [
+      "Análisis de una tabla inicial con información de clientes, vehículos, fábricas y alquileres",
+      "Comprobación de la primera forma normal",
+      "Identificación de claves candidatas y dependencias funcionales",
+      "Separación de los datos para alcanzar la segunda forma normal",
+      "Eliminación de dependencias transitivas para alcanzar la tercera forma normal",
+      "Creación de las tablas cliente, vehículo, fábrica y alquiler",
+      "Definición de claves primarias",
+      "Definición de claves foráneas entre las tablas",
+      "Diseño del modelo Entidad-Relación resultante",
+      "Creación de la estructura mediante sentencias DDL",
+      "Inserción de los datos mediante sentencias DML",
+    ],
+
+    trabajoRealizado:
+      "Partí de la tabla proporcionada en el ejercicio y fui analizando las dependencias entre sus columnas. Identifiqué qué datos dependían del DNI, de la matrícula y del identificador de fábrica, y fui separando la información en distintas tablas hasta alcanzar la tercera forma normal. Después representé gráficamente el modelo resultante y preparé el SQL necesario para crear las tablas, establecer sus relaciones e insertar los datos.",
+
+    estadoDetalle:
+      "El resultado final separa la información en cuatro tablas principales: cliente, vehículo, fábrica y alquiler. Los datos personales dependen del DNI, la información del vehículo depende de la matrícula y la dirección de la fábrica depende de su identificador. La tabla alquiler relaciona clientes y vehículos y almacena los datos propios de cada alquiler, como las fechas y el kilometraje.",
+
+    tecnologiasDetalle:
+      "SQL para definir la estructura de la base de datos y trabajar con sus datos.\nMySQL como sistema de base de datos utilizado en el ejercicio.\nXAMPP para disponer del entorno local de trabajo con MySQL.\nExcel para analizar los datos originales y documentar el proceso de normalización.\ndraw.io para representar gráficamente el modelo Entidad-Relación.\nDDL para crear tablas, claves primarias y claves foráneas.\nDML para insertar los registros proporcionados en el ejercicio.\nPrimera, segunda y tercera forma normal para reorganizar los datos y reducir redundancias.",
   },
 ];
 

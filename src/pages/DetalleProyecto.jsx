@@ -87,6 +87,23 @@ function DetalleProyecto() {
               {proyecto.descripcionLarga}
             </p>
 
+            {proyecto.profesor && (
+              <p className="detalle-proyecto__intro">
+                Profesor:{" "}
+                {proyecto.profesorEnlace ? (
+                  <a
+                    href={proyecto.profesorEnlace}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {proyecto.profesor}
+                  </a>
+                ) : (
+                  proyecto.profesor
+                )}
+              </p>
+            )}
+
             <div className="detalle-proyecto__estado-demo">
               <div className="detalle-proyecto__estado-bloque">
                 <p className="detalle-proyecto__subtitulo-pequeno">Estado</p>
@@ -119,6 +136,23 @@ function DetalleProyecto() {
                       Ver demo
                     </Link>
                   )}
+                </div>
+              )}
+
+              {proyecto.enlaceGithub && (
+                <div className="detalle-proyecto__demo-bloque">
+                  <p className="detalle-proyecto__subtitulo-pequeno">
+                    Código fuente
+                  </p>
+
+                  <a
+                    href={proyecto.enlaceGithub}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="detalle-proyecto__boton"
+                  >
+                    Ver código en GitHub
+                  </a>
                 </div>
               )}
             </div>
