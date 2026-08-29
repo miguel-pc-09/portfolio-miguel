@@ -170,6 +170,8 @@ export const proyectosAcademicos = [
     estado: "Completado",
     enlaceDemo: "https://lumos-candles-miguel.netlify.app/",
     imagen: "/imagenes/lumos-candles.png",
+    profesor: "José Manuel Prieto",
+    profesorEnlace: "https://www.linkedin.com/in/jose-manuel-prieto-0aaba919b/",
     objetivo:
       "Con este ejercicio quería demostrar que sé montar una web sencilla pero bien presentada, cuidando la estética, la organización del contenido y la sensación general al recorrerla.",
     funcionalidades: [
@@ -199,6 +201,8 @@ export const proyectosAcademicos = [
     estado: "Completado",
     enlaceDemo: "https://planer-studio.netlify.app/",
     imagen: "/imagenes/agenda-web.png",
+    profesor: "José Manuel Prieto",
+    profesorEnlace: "https://www.linkedin.com/in/jose-manuel-prieto-0aaba919b/",
     objetivo:
       "Con este ejercicio quería demostrar que también sé trabajar una web a partir de Bootstrap, no solo colocando componentes, sino adaptándolos para que la página tuviera un estilo propio y quedara clara al navegar.",
     funcionalidades: [
@@ -919,6 +923,407 @@ export const proyectosAcademicos = [
 
     tecnologiasDetalle:
       "SQL para definir la estructura de la base de datos y trabajar con sus datos.\nMySQL como sistema de base de datos utilizado en el ejercicio.\nXAMPP para disponer del entorno local de trabajo con MySQL.\nExcel para analizar los datos originales y documentar el proceso de normalización.\ndraw.io para representar gráficamente el modelo Entidad-Relación.\nDDL para crear tablas, claves primarias y claves foráneas.\nDML para insertar los registros proporcionados en el ejercicio.\nPrimera, segunda y tercera forma normal para reorganizar los datos y reducir redundancias.",
+  },
+  {
+    id: 118,
+    slug: "funciones-sql-classicmodels",
+    seccion: "bases-datos",
+    categoria: "Proyecto académico / Bases de datos",
+    titulo: "Funciones SQL con ClassicModels",
+    descripcion:
+      "Ejercicio de Bases de Datos centrado en la creación de funciones SQL para realizar cálculos y consultas sobre la base de datos ClassicModels.",
+
+    descripcionLarga:
+      "Ejercicio realizado durante el tercer trimestre de la asignatura de Bases de Datos, impartida por Víctor Manuel Bullido Alonso. La práctica consistía en trabajar con la base de datos ClassicModels y desarrollar distintas funciones SQL para realizar cálculos, consultar los pagos de los clientes y aplicar diferentes comportamientos en función de los datos recibidos.",
+
+    tecnologias: ["SQL", "MariaDB", "phpMyAdmin"],
+    estado: "Completado",
+
+    imagen: "/imagenes/academicos/funciones-sql-classicmodels.png",
+
+    imagenes: [
+      "/imagenes/academicos/funciones-sql-classicmodels.png",
+      "/imagenes/academicos/funcion-espar-sql.png",
+      "/imagenes/academicos/funcion-suma-pagos-sql.png",
+      "/imagenes/academicos/resultado-suma-pagos-sql.png",
+      "/imagenes/academicos/funcion-pagos-segun-cliente-sql.png",
+      "/imagenes/academicos/resultado-pagos-segun-cliente-sql.png",
+      "/imagenes/academicos/funcion-sumatorio-sql.png",
+      "/imagenes/academicos/resultado-sumatorio-sql.png",
+    ],
+
+    profesor: "Víctor Manuel Bullido Alonso",
+    profesorEnlace:
+      "https://www.linkedin.com/in/v%C3%ADctor-manuel-bullido-alonso-418579111/",
+
+    objetivo:
+      "El objetivo del ejercicio era practicar la creación de funciones almacenadas en SQL, trabajando con parámetros, valores de retorno, consultas sobre tablas, estructuras condicionales y bucles.",
+
+    funcionalidades: [
+      "Función para determinar si un número es par o impar",
+      "Función para calcular la suma de los pagos de un cliente",
+      "Consulta de pagos mediante el identificador customerNumber",
+      "Función con comportamiento diferente para clientes pares e impares",
+      "Cálculo de la suma de pagos para números de cliente pares",
+      "Cálculo del número de pagos para números de cliente impares",
+      "Función para calcular el sumatorio desde 1 hasta un número N",
+      "Control de valores iguales o inferiores a cero en el cálculo del sumatorio",
+    ],
+
+    trabajoRealizado:
+      "Desarrollé las cuatro funciones SQL planteadas en el ejercicio utilizando la base de datos ClassicModels. Trabajé con parámetros de entrada, variables locales, consultas SELECT con SUM y COUNT, estructuras condicionales IF y bucles WHILE. También realicé distintas consultas para comprobar que las funciones devolvían correctamente los resultados esperados.",
+
+    estadoDetalle:
+      "La práctica se realizó sobre ClassicModels, una base de datos con información relacionada con clientes, productos, pedidos y pagos. Las funciones creadas permiten comprobar si un número es par, calcular los pagos realizados por un cliente, devolver resultados diferentes según si su identificador es par o impar y calcular el sumatorio desde 1 hasta un número determinado.",
+
+    tecnologiasDetalle:
+      "SQL para desarrollar las consultas y funciones almacenadas.\nMariaDB como sistema gestor de la base de datos utilizado para ejecutar las funciones.\nphpMyAdmin para importar ClassicModels, ejecutar las consultas SQL y comprobar los resultados.\nFunciones almacenadas para encapsular las distintas operaciones solicitadas.\nSUM y COUNT para realizar cálculos sobre los pagos de los clientes.\nIF para aplicar diferentes comportamientos según determinadas condiciones.\nWHILE para realizar el cálculo iterativo del sumatorio.",
+  },
+  {
+    id: 119,
+    slug: "tienda-angular",
+    seccion: "angular",
+    categoria: "Proyecto académico / Angular",
+    titulo: "Tienda online con Angular",
+    descripcion:
+      "SPA desarrollada con Angular para consultar productos desde una API, navegar entre distintas vistas y gestionar un carrito de compra.",
+
+    descripcionLarga:
+      "Ejercicio realizado durante el tercer trimestre de la asignatura de Programación, impartida por Borja Martín Herrera. La práctica consistía en desarrollar una SPA utilizando un framework frontend, con al menos tres componentes navegables, servicios para gestionar los datos, conexión con una API externa y comunicación entre componentes. Para el proyecto desarrollé una tienda online con Angular y TypeScript, utilizando DummyJSON como fuente de productos.",
+
+    tecnologias: [
+      "Angular",
+      "TypeScript",
+      "RxJS",
+      "HttpClient",
+      "DummyJSON",
+      "Netlify",
+    ],
+
+    estado: "Completado",
+
+    enlaceDemo: "https://mitienda-miguel.netlify.app/inicio",
+
+    imagen: "/imagenes/academicos/tienda-angular-inicio.png",
+
+    imagenes: [
+      "/imagenes/academicos/tienda-angular-inicio.png",
+      "/imagenes/academicos/tienda-angular-productos.png",
+    ],
+
+    profesor: "Borja Martín Herrera",
+    profesorEnlace: "https://www.linkedin.com/in/borja-mart%C3%ADn-herrera/",
+
+    objetivo:
+      "El objetivo del ejercicio era desarrollar una aplicación de tipo SPA utilizando un framework frontend, trabajando la navegación entre componentes, los servicios, el consumo de una API externa y la comunicación de datos entre distintas partes de la aplicación.",
+
+    funcionalidades: [
+      "Página de inicio con listado de productos",
+      "Vista independiente para consultar todos los productos",
+      "Filtrado de productos por categoría",
+      "Vista de detalle de cada producto",
+      "Carrito de compra independiente",
+      "Añadir productos al carrito",
+      "Eliminar productos del carrito",
+      "Vaciar completamente el carrito",
+      "Cálculo del importe total del carrito",
+      "Consulta de productos mediante la API DummyJSON",
+      "Navegación mediante Angular Router",
+      "Gestión compartida del carrito mediante un servicio",
+      "Aplicación desplegada públicamente en Netlify",
+    ],
+
+    trabajoRealizado:
+      "Desarrollé la aplicación con Angular y TypeScript separando las distintas partes en componentes para inicio, productos, detalle de producto y carrito. Creé un servicio para consumir la API de DummyJSON mediante HttpClient y otro servicio para gestionar el estado compartido del carrito. También configuré las rutas de la aplicación y la comunicación necesaria entre las diferentes vistas.",
+
+    estadoDetalle:
+      "La aplicación funciona como una SPA en la que el usuario puede navegar entre la página de inicio, el catálogo de productos y el carrito sin recargar completamente la página. Los productos se obtienen desde una API externa y pueden consultarse individualmente, filtrarse por categoría y añadirse al carrito. El servicio del carrito mantiene los productos compartidos entre las diferentes vistas de la aplicación.",
+
+    tecnologiasDetalle:
+      "Angular como framework principal para construir la SPA.\nTypeScript para desarrollar la lógica de componentes y servicios.\nAngular Router para gestionar la navegación entre inicio, productos, detalle y carrito.\nHttpClient para realizar las peticiones a la API externa.\nDummyJSON como API utilizada para obtener los productos.\nRxJS y Observable para trabajar con las respuestas del servicio HTTP.\nServicios de Angular para compartir la información del carrito entre los componentes.\nNetlify para el despliegue público de la aplicación.",
+  },
+  {
+    id: 120,
+    slug: "trivial-fp-daw",
+    seccion: "javascript",
+    categoria: "Proyecto académico extra / JavaScript",
+    titulo: "Trivial FP DAW",
+    descripcion:
+      "Juego de preguntas tipo test desarrollado con JavaScript que posteriormente adapté como herramienta de estudio para preparar distintas asignaturas del ciclo.",
+
+    descripcionLarga:
+      "Proyecto extra propuesto durante una clase presencial de la asignatura de Programación, impartida por Borja Martín Herrera. El ejercicio consistía en desarrollar un juego de preguntas tipo Trivial. A partir de esa idea amplié posteriormente el proyecto incorporando preguntas tipo test de distintas asignaturas del ciclo, convirtiéndolo en una herramienta que utilicé durante el curso para repasar contenidos y preparar los exámenes.",
+
+    tecnologias: ["HTML5", "CSS3", "JavaScript", "JSON", "Vercel"],
+    estado: "Completado",
+
+    enlaceDemo: "https://trivial-zeta.vercel.app/",
+
+    imagen: "/imagenes/academicos/trivial-fp-daw.png",
+
+    profesor: "Borja Martín Herrera",
+    profesorEnlace: "https://www.linkedin.com/in/borja-mart%C3%ADn-herrera/",
+
+    objetivo:
+      "El objetivo inicial era practicar JavaScript mediante un juego interactivo de preguntas. Posteriormente amplié el proyecto para utilizarlo como herramienta personal de estudio, incorporando preguntas de diferentes asignaturas y un sistema que permitiera revisar los errores cometidos.",
+
+    funcionalidades: [
+      "Selección de asignatura antes de comenzar la partida",
+      "Carga de preguntas almacenadas en formato JSON",
+      "Generación de preguntas tipo test",
+      "Control para evitar repetir preguntas durante una partida",
+      "Contador de preguntas restantes",
+      "Registro de respuestas correctas e incorrectas",
+      "Temporizador para completar las preguntas",
+      "Reinicio del tiempo durante la partida",
+      "Comprobación de la respuesta seleccionada",
+      "Listado final de las preguntas falladas",
+      "Visualización de la respuesta correcta en los errores",
+      "Contenido ampliado con preguntas de distintas asignaturas de DAW",
+      "Aplicación desplegada públicamente en Vercel",
+    ],
+
+    trabajoRealizado:
+      "Partí del ejercicio propuesto en clase y desarrollé la lógica del juego con JavaScript. Organicé las preguntas en un fichero JSON y programé la selección de asignaturas, la generación aleatoria de preguntas, el control de aciertos y fallos y el temporizador. Posteriormente fui ampliando el contenido con preguntas tipo test de distintas materias para utilizar la aplicación como herramienta de repaso durante el curso.",
+
+    estadoDetalle:
+      "El usuario selecciona una asignatura y comienza una ronda de preguntas tipo test. La aplicación controla las preguntas ya utilizadas, los aciertos, los fallos y el tiempo disponible. Al terminar, las preguntas respondidas incorrectamente pueden consultarse junto con su respuesta correcta, lo que me permitía revisar directamente los errores y volver a estudiar esos contenidos.",
+
+    tecnologiasDetalle:
+      "HTML5 para estructurar la interfaz del juego.\nCSS3 para diseñar la presentación y los distintos estados visuales.\nJavaScript para gestionar preguntas, respuestas, temporizador, puntuaciones y lógica de la partida.\nJSON para almacenar y organizar las preguntas de las diferentes asignaturas.\nFetch para cargar el fichero de preguntas desde la aplicación.\nManipulación del DOM y eventos para actualizar dinámicamente la interfaz.\nVercel para el despliegue público del proyecto.",
+  },
+  {
+    id: 121,
+    slug: "ejercicios-php-primer-trimestre",
+    seccion: "php",
+    categoria: "Proyecto académico / PHP",
+    titulo: "Ejercicios de PHP · Primer trimestre",
+    descripcion:
+      "Conjunto de ejercicios desarrollados con PHP para practicar generación aleatoria, arrays, bucles, funciones y procesamiento de formularios.",
+
+    descripcionLarga:
+      "Conjunto de ejercicios realizados durante el primer trimestre para trabajar los fundamentos de PHP. La práctica estaba formada por tres ejercicios diferentes: generación de un rectángulo de asteriscos a partir de dimensiones aleatorias, simulación de un juego de dados para dos jugadores y desarrollo de un formulario capaz de enviar dos números y una operación matemática a otra página PHP para procesar y mostrar el resultado.",
+
+    tecnologias: ["PHP", "HTML5"],
+    estado: "Completado",
+
+    imagen: "/imagenes/academicos/php-ejercicios-1t-dados.png",
+
+    imagenes: [
+      "/imagenes/academicos/php-ejercicios-1t-dados.png",
+      "/imagenes/academicos/php-ejercicios-1t-rectangulo.png",
+      "/imagenes/academicos/php-ejercicios-1t-dados-codigo.png",
+      "/imagenes/academicos/php-ejercicios-1t-operaciones.png",
+      "/imagenes/academicos/php-ejercicios-1t-resultado-operaciones.png",
+    ],
+
+    enlaceGithub:
+      "https://github.com/miguel-pc-09/DAW-2--Proyectos/tree/634dff483c9a9ccaeaa0f311b8e437507d0f4d15/Desarrollo%20Entorno%20Servidor/Evaluables/1%C2%BA%20Trimestre",
+
+    profesor: "José Manuel Prieto",
+    profesorEnlace: "https://www.linkedin.com/in/jose-manuel-prieto-0aaba919b/",
+
+    objetivo:
+      "El objetivo de estos ejercicios era comenzar a trabajar con PHP aplicando generación de valores aleatorios, bucles, arrays, funciones y procesamiento de información enviada mediante formularios web.",
+
+    funcionalidades: [
+      "Generación de números aleatorios mediante PHP",
+      "Creación dinámica de un rectángulo de asteriscos",
+      "Uso de bucles anidados para generar filas y columnas",
+      "Simulación de cinco lanzamientos de dados por jugador",
+      "Almacenamiento y tratamiento de resultados",
+      "Cálculo de la puntuación total de cada jugador",
+      "Determinación automática del ganador o del empate",
+      "Formulario HTML para introducir dos números",
+      "Selección de suma, resta, producto o cociente",
+      "Envío de información mediante método POST",
+      "Procesamiento de los datos en una segunda página PHP",
+      "Control de la división entre cero",
+      "Presentación dinámica del resultado de la operación",
+    ],
+
+    trabajoRealizado:
+      "Desarrollé los tres ejercicios utilizando PHP y HTML. En el primero trabajé con números aleatorios y bucles anidados para generar dinámicamente un rectángulo. En el segundo utilicé generación aleatoria y estructuras de control para simular los dados de dos jugadores, calcular sus puntuaciones y determinar el resultado. En el tercero preparé un formulario HTML y procesé los datos enviados mediante POST desde una segunda página PHP, aplicando la operación matemática seleccionada.",
+
+    estadoDetalle:
+      "Los ejercicios muestran una progresión desde operaciones sencillas realizadas directamente con PHP hasta la comunicación entre distintas páginas mediante formularios. Además de trabajar bucles y generación aleatoria, el ejercicio de los dados introduce el tratamiento de varios valores y el cálculo de resultados, mientras que el formulario permite practicar la recepción y procesamiento de información enviada por el usuario.",
+
+    tecnologiasDetalle:
+      "PHP como lenguaje principal para desarrollar la lógica de los ejercicios.\nHTML5 para crear el formulario del ejercicio de operaciones.\nrand() para generar números aleatorios y simular los lanzamientos de dados.\nBucles for para recorrer valores y generar contenido dinámicamente.\nVariables y estructuras condicionales para realizar cálculos y determinar resultados.\nFormularios HTML y método POST para enviar información entre páginas.\n$_POST para recuperar los datos introducidos por el usuario.\nPHP y HTML combinados para generar dinámicamente la salida mostrada en el navegador.",
+  },
+  {
+    id: 122,
+    slug: "inmobiliaria-php-mysql",
+    seccion: "php",
+    categoria: "Proyecto académico / PHP",
+    titulo: "Inmobiliaria con PHP y MySQL",
+
+    descripcion:
+      "Aplicación web de una inmobiliaria desarrollada con PHP y MySQL para gestionar usuarios y pisos, además de ofrecer una zona pública de consulta.",
+
+    descripcionLarga:
+      "Proyecto realizado durante el segundo trimestre de la asignatura de Desarrollo Web en Entorno Servidor, impartida por José Manuel Prieto. La práctica consistía en desarrollar una aplicación web para una inmobiliaria utilizando HTML5, CSS3, PHP y una base de datos MySQL. El proyecto incluye gestión de usuarios y viviendas mediante formularios conectados a base de datos, además de una zona pública desde la que se pueden consultar y buscar pisos.",
+
+    tecnologias: ["PHP", "HTML5", "MySQL", "XAMPP", "phpMyAdmin"],
+
+    estado: "Completado",
+
+    imagen: "/imagenes/academicos/inmobiliaria-menu-principal.png",
+
+    imagenes: [
+      "/imagenes/academicos/inmobiliaria-menu-principal.png",
+      "/imagenes/academicos/inmobiliaria-alta-usuario.png",
+      "/imagenes/academicos/inmobiliaria-buscar-usuario.png",
+      "/imagenes/academicos/inmobiliaria-borrar-usuario.png",
+      "/imagenes/academicos/inmobiliaria-alta-piso.png",
+      "/imagenes/academicos/inmobiliaria-buscar-piso.png",
+      "/imagenes/academicos/inmobiliaria-borrar-piso.png",
+    ],
+
+    enlaceGithub:
+      "https://github.com/miguel-pc-09/DAW-2--Proyectos/tree/main/Desarrollo%20Entorno%20Servidor/Evaluables/02_Trimestre/Inmobiliaria",
+
+    profesor: "José Manuel Prieto",
+    profesorEnlace: "https://www.linkedin.com/in/jose-manuel-prieto-0aaba919b/",
+
+    objetivo:
+      "El objetivo de la práctica era desarrollar una aplicación web conectada a una base de datos MySQL, trabajando la gestión de usuarios y viviendas desde PHP y separando las operaciones de administración de las consultas disponibles públicamente.",
+
+    funcionalidades: [
+      "Menú principal para acceder a las diferentes operaciones",
+      "Alta de usuarios mediante formulario",
+      "Búsqueda de usuarios por nombre o correo electrónico",
+      "Eliminación de usuarios mediante su identificador",
+      "Gestión de distintos tipos de usuario",
+      "Alta de pisos con sus datos principales",
+      "Asociación de viviendas con un usuario vendedor",
+      "Selección de imagen para cada vivienda",
+      "Búsqueda de pisos por calle, zona o código postal",
+      "Eliminación de pisos mediante su código",
+      "Zona pública para consultar viviendas",
+      "Persistencia de la información mediante MySQL",
+      "Comunicación entre formularios PHP y la base de datos",
+    ],
+
+    trabajoRealizado:
+      "Desarrollé las diferentes páginas PHP necesarias para gestionar usuarios y viviendas y preparé los formularios para realizar altas, búsquedas y eliminaciones. También trabajé la conexión con MySQL mediante PHP, la creación y utilización de la base de datos inmobiliaria y las consultas necesarias para almacenar y recuperar la información. Para ejecutar y probar el proyecto utilicé XAMPP y phpMyAdmin.",
+
+    estadoDetalle:
+      "La aplicación se organiza a partir de un menú principal dividido entre la gestión de usuarios, la gestión de pisos y una zona pública. Desde las diferentes pantallas se pueden introducir datos mediante formularios y realizar operaciones sobre la base de datos. Los pisos almacenan información como dirección, código postal, metros, zona, precio, imagen y el usuario asociado como vendedor.",
+
+    tecnologiasDetalle:
+      "PHP para desarrollar la lógica del servidor y procesar los formularios.\nHTML5 para estructurar las diferentes páginas y formularios.\nMySQL para almacenar usuarios, viviendas y relaciones entre los datos.\nmysqli para realizar la conexión y las consultas desde PHP.\nXAMPP como entorno local para ejecutar Apache, PHP y MySQL.\nphpMyAdmin para importar, consultar y administrar la base de datos inmobiliaria.\nFormularios y método POST para enviar información entre las distintas páginas del proyecto.",
+  },
+  {
+    id: 123,
+    slug: "eventos-tech",
+    seccion: "php",
+    categoria: "Proyecto académico / PHP · Interfaces",
+    titulo: "Eventos Tech",
+
+    descripcion:
+      "Aplicación web para gestionar eventos tecnológicos mediante autenticación, sesiones, operaciones CRUD y una interfaz responsive conectada a MySQL.",
+
+    descripcionLarga:
+      "Práctica integradora realizada durante el tercer trimestre para las asignaturas de Desarrollo Web en Entorno Servidor y Diseño de Interfaces Web, impartidas por José Manuel Prieto. El proyecto consistía en desarrollar una aplicación para gestionar eventos tecnológicos, combinando autenticación mediante fichero de texto, sesiones en PHP, conexión con MySQL, operaciones CRUD y una interfaz visual responsive.",
+
+    tecnologias: [
+      "PHP",
+      "MySQL",
+      "HTML5",
+      "CSS3",
+      "Bootstrap",
+      "XAMPP",
+      "phpMyAdmin",
+    ],
+
+    estado: "Completado",
+
+    imagen: "/imagenes/academicos/eventos-tech-04-listado-eventos.png",
+
+    imagenes: [
+      "/imagenes/academicos/eventos-tech-01-login.png",
+      "/imagenes/academicos/eventos-tech-02-panel.png",
+      "/imagenes/academicos/eventos-tech-03-crear-evento.png",
+      "/imagenes/academicos/eventos-tech-04-listado-eventos.png",
+    ],
+
+    enlaceGithub:
+      "https://github.com/miguel-pc-09/DAW-2--Proyectos/tree/main/Desarrollo%20Entorno%20Servidor/Evaluables/03_Trimestre/Eventos_app",
+
+    profesor: "José Manuel Prieto",
+    profesorEnlace: "https://www.linkedin.com/in/jose-manuel-prieto-0aaba919b/",
+
+    objetivo:
+      "El objetivo de la práctica era integrar en una misma aplicación autenticación de usuarios, sesiones, gestión de datos mediante MySQL y una interfaz web responsive, aplicando contenidos tanto de desarrollo en servidor como de diseño de interfaces.",
+
+    funcionalidades: [
+      "Inicio de sesión mediante credenciales almacenadas en usuarios.txt",
+      "Validación de usuario y contraseña desde PHP",
+      "Uso de sesiones para mantener autenticado al usuario",
+      "Cierre de sesión",
+      "Panel principal después del acceso",
+      "Listado de eventos almacenados en MySQL",
+      "Creación de nuevos eventos",
+      "Edición de eventos existentes",
+      "Eliminación de eventos",
+      "Campos para nombre, fecha, descripción, lugar y capacidad",
+      "Uso de consultas preparadas para trabajar con la base de datos",
+      "Validación de datos introducidos por el usuario",
+      "Navegación entre las distintas secciones de la aplicación",
+      "Diseño responsive mediante Bootstrap y CSS propio",
+    ],
+
+    trabajoRealizado:
+      "Desarrollé la aplicación combinando PHP con MySQL y una interfaz visual trabajada con Bootstrap y CSS. Preparé el sistema de autenticación mediante un fichero usuarios.txt, el control de sesión, la navegación entre las diferentes páginas y las operaciones CRUD para gestionar los eventos. También configuré la conexión con la base de datos, utilicé consultas preparadas y trabajé la parte visual para que la aplicación mantuviera una estética coherente y se adaptara a distintos tamaños de pantalla.",
+
+    estadoDetalle:
+      "La aplicación comienza con una pantalla de inicio de sesión. Una vez validadas las credenciales, el usuario accede a un panel desde el que puede consultar los eventos existentes o crear nuevos. Cada evento almacena su nombre, fecha, descripción, lugar y capacidad, y desde el listado se pueden editar o eliminar los registros. El acceso a las distintas funciones queda protegido mediante sesión.",
+
+    tecnologiasDetalle:
+      "PHP para desarrollar la lógica del servidor, gestionar la autenticación, las sesiones y las operaciones CRUD.\nMySQL para almacenar los eventos.\nmysqli y consultas preparadas para realizar operaciones sobre la base de datos de forma más segura.\nHTML5 para estructurar las diferentes páginas y formularios.\nCSS3 para personalizar la apariencia visual de la aplicación.\nBootstrap para construir una interfaz responsive y reutilizar componentes de diseño.\nusuarios.txt para almacenar las credenciales utilizadas en el sistema de autenticación.\nXAMPP como entorno local para ejecutar Apache, PHP y MySQL.\nphpMyAdmin para importar y administrar la base de datos eventos_tech.",
+  },
+  {
+    id: 124,
+    slug: "gestion-inventario-python",
+    seccion: "python",
+    categoria: "Proyecto académico / Python",
+    titulo: "Gestión de inventario en Python",
+    descripcion:
+      "Aplicación de consola desarrollada en Python para gestionar el inventario de una tienda de electrónica mediante lectura, consulta y actualización de productos almacenados en un fichero de texto.",
+    descripcionLarga:
+      "Actividad realizada durante el primer trimestre de la asignatura de Python, impartida por César Tejedor Moreno. La práctica consistía en desarrollar un sistema de gestión de inventario para una tienda de electrónica, almacenando cada producto con su nombre, precio y cantidad disponible. La información se guarda en inventario.txt para mantener los datos incluso después de cerrar el programa.",
+    tecnologias: ["Python", "Ficheros de texto"],
+    estado: "Completado",
+    imagen: "/imagenes/academicos/python-inventario-ejecucion.png",
+    imagenes: [
+      "/imagenes/academicos/python-inventario-ejecucion.png",
+      "/imagenes/academicos/python-inventario-codigo.png",
+      "/imagenes/academicos/python-inventario-datos.png",
+    ],
+    enlaceGithub:
+      "https://github.com/miguel-pc-09/DAW-2--Proyectos/blob/main/Python/Tareas%20evaluativas/00_1Trimestre/gestion_inventario.py",
+    profesor: "César Tejedor Moreno",
+    profesorEnlace: "https://www.linkedin.com/in/ctejedorm/",
+    objetivo:
+      "El objetivo de la actividad era practicar los fundamentos de Python mediante una aplicación capaz de gestionar información de productos y utilizar un fichero de texto para conservar los datos del inventario de forma persistente.",
+    funcionalidades: [
+      "Carga de productos desde el fichero inventario.txt",
+      "Creación de un inventario inicial predeterminado cuando el fichero está vacío",
+      "Visualización del nombre, precio y cantidad de cada producto",
+      "Cálculo del valor total del inventario",
+      "Identificación de productos agotados",
+      "Actualización de la cantidad disponible de un producto",
+      "Guardado de los cambios en inventario.txt",
+      "Persistencia de la información entre ejecuciones",
+      "Menú interactivo mediante consola",
+    ],
+    trabajoRealizado:
+      "Desarrollé el programa en Python separando las distintas operaciones mediante funciones. Trabajé la lectura y escritura de inventario.txt, la creación de productos iniciales, la consulta del inventario, el cálculo de su valor total, la detección de productos agotados y la actualización del stock. También preparé un menú por consola para acceder a cada una de las funciones y mantener los cambios guardados entre ejecuciones.",
+    estadoDetalle:
+      "La aplicación utiliza inventario.txt como almacenamiento persistente. Si el fichero está vacío, el programa genera un inventario inicial con varios productos. Desde el menú se puede cargar o mostrar el inventario, calcular su valor total, consultar qué productos están agotados y modificar la cantidad disponible de un producto, reescribiendo posteriormente el fichero con los datos actualizados.",
+    tecnologiasDetalle:
+      "Python como lenguaje principal del ejercicio.\nFunciones para separar las diferentes operaciones del programa.\nFicheros de texto para almacenar el inventario de forma persistente.\nopen(), read(), readlines() y writelines() para leer y escribir los datos.\nListas y diccionarios para organizar los productos iniciales.\nBucles y estructuras condicionales para recorrer el inventario y controlar las distintas opciones.\nmatch/case para gestionar el menú principal de la aplicación.",
   },
 ];
 

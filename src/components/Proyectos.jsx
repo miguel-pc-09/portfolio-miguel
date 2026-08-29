@@ -8,6 +8,10 @@ function Proyectos() {
         <div className="seccion__encabezado">
           <p className="seccion__mini">Proyectos desarrollados por mí</p>
           <h2>Proyectos</h2>
+          <p className="seccion__descripcion">
+            Una selección de proyectos personales y profesionales donde aplico
+            lo que voy aprendiendo en desarrollo web.
+          </p>
         </div>
 
         <div className="proyectos__grid">

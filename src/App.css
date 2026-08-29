@@ -625,6 +625,21 @@ a {
   transform: translateX(4px);
 }
 
+.seccion__descripcion {
+  max-width: 650px;
+  margin: 12px 0 0;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+.tema-claro .seccion__descripcion {
+  color: #596579;
+}
+
+.tema-oscuro .seccion__descripcion {
+  color: #aeb7c6;
+}
+
 /* =========================================
    SOBRE MÍ
 ========================================= */
