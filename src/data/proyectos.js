@@ -1325,6 +1325,319 @@ export const proyectosAcademicos = [
     tecnologiasDetalle:
       "Python como lenguaje principal del ejercicio.\nFunciones para separar las diferentes operaciones del programa.\nFicheros de texto para almacenar el inventario de forma persistente.\nopen(), read(), readlines() y writelines() para leer y escribir los datos.\nListas y diccionarios para organizar los productos iniciales.\nBucles y estructuras condicionales para recorrer el inventario y controlar las distintas opciones.\nmatch/case para gestionar el menú principal de la aplicación.",
   },
+  {
+    id: 125,
+    slug: "sistema-reservas-gimnasio-python",
+    seccion: "python",
+    categoria: "Proyecto académico / Python",
+    titulo: "Sistema de reservas para centro deportivo",
+
+    descripcion:
+      "Aplicación de consola desarrollada en Python para gestionar clientes, entrenadores, actividades y reservas de un centro deportivo aplicando programación orientada a objetos.",
+
+    descripcionLarga:
+      "Proyecto realizado durante el segundo trimestre de Python. La práctica consistía en desarrollar un sistema de gestión de reservas para un centro deportivo aplicando programación orientada a objetos. La aplicación permite gestionar clientes y entrenadores, trabajar con actividades colectivas y entrenamientos personales, realizar reservas controlando las plazas disponibles y calcular automáticamente el precio correspondiente según el tipo de actividad.",
+
+    tecnologias: ["Python", "POO"],
+
+    estado: "Completado",
+
+    imagen: "/imagenes/academicos/python-reservas-gimnasio-02-actividades.png",
+
+    imagenes: [
+      "/imagenes/academicos/python-reservas-gimnasio-02-actividades.png",
+      "/imagenes/academicos/python-reservas-gimnasio-01-menu.png",
+      "/imagenes/academicos/python-reservas-gimnasio-03-main.png",
+      "/imagenes/academicos/python-reservas-gimnasio-04-poo.png",
+      "/imagenes/academicos/python-reservas-gimnasio-05-sistema.png",
+    ],
+
+    enlaceGithub:
+      "https://github.com/miguel-pc-09/DAW-2--Proyectos/tree/main/Python/Tareas%20evaluativas/01_2Trimestre",
+
+    profesor: "César Tejedor Moreno",
+    profesorEnlace: "https://www.linkedin.com/in/ctejedorm/",
+
+    objetivo:
+      "El objetivo del ejercicio era desarrollar una aplicación de gestión de reservas aplicando los principales conceptos de programación orientada a objetos en Python, incluyendo abstracción, encapsulamiento, herencia y polimorfismo, además de organizar el sistema en múltiples archivos y controlar situaciones de error mediante excepciones.",
+
+    funcionalidades: [
+      "Creación de clientes y entrenadores",
+      "Registro de la especialidad de cada entrenador",
+      "Listado de clientes y entrenadores registrados",
+      "Creación y consulta de diferentes tipos de actividades",
+      "Gestión de clases colectivas y entrenamientos personales",
+      "Control del número máximo de plazas de cada actividad",
+      "Consulta del estado de ocupación de las actividades",
+      "Realización de reservas para los clientes",
+      "Comprobación de plazas disponibles antes de confirmar una reserva",
+      "Actualización automática de las plazas ocupadas",
+      "Asociación de las reservas al cliente correspondiente",
+      "Consulta de las reservas realizadas por cada cliente",
+      "Cálculo automático del precio según el tipo de actividad",
+      "Aplicación de un porcentaje adicional en los entrenamientos personales",
+      "Control de actividades completas mediante una excepción personalizada",
+      "Menú interactivo para acceder a las distintas operaciones",
+    ],
+
+    trabajoRealizado:
+      "Desarrollé la aplicación dividiendo la lógica en distintos módulos y clases para representar usuarios, actividades, reservas y el propio sistema de gestión. Utilicé clases abstractas como base para clientes, entrenadores y actividades, y apliqué herencia y polimorfismo para que cada tipo de actividad pudiera calcular su precio de forma independiente. También implementé el control de plazas, la asociación de reservas con los clientes y una excepción personalizada para impedir reservas cuando una actividad está completa.",
+
+    estadoDetalle:
+      "La aplicación funciona mediante un menú principal desde el que se pueden crear clientes y entrenadores, consultar los usuarios registrados, listar las actividades disponibles, crear nuevas actividades y realizar reservas. Las clases colectivas mantienen el precio base, mientras que los entrenamientos personales aplican un porcentaje adicional. Antes de realizar una reserva se comprueba la disponibilidad de plazas y, cuando se confirma, se actualiza la ocupación y la reserva queda asociada al cliente.",
+
+    tecnologiasDetalle:
+      "Python como lenguaje utilizado para desarrollar la aplicación.\nProgramación orientada a objetos para organizar usuarios, actividades, reservas y la lógica del sistema.\nABC y abstractmethod para definir las clases abstractas Usuario y Actividad.\nHerencia para crear Cliente y Entrenador a partir de Usuario y los diferentes tipos de actividad a partir de Actividad.\nPolimorfismo para implementar el cálculo del precio según el tipo de actividad.\nEncapsulamiento mediante atributos internos y métodos de acceso.\nEnum para representar tipos de clase y especialidades de los entrenadores.\nExcepciones personalizadas para controlar reservas cuando no quedan plazas disponibles.\nMódulos y paquetes de Python para dividir el proyecto en diferentes archivos y facilitar su organización.",
+  },
+  {
+    id: 126,
+    slug: "lista-tareas-django-python",
+    seccion: "python",
+    categoria: "Proyecto académico / Python / Django",
+    titulo: "Lista de tareas con Python y Django",
+
+    descripcion:
+      "Primera aplicación web desarrollada con Python y Django para mostrar una lista de tareas mediante vistas, rutas y templates.",
+
+    descripcionLarga:
+      "Proyecto realizado durante el tercer trimestre de Python como introducción al desarrollo web con Django. La práctica consistía en instalar y configurar el framework, crear un proyecto y una aplicación, registrar la aplicación en Django, configurar las rutas y desarrollar una vista para mostrar una lista de tareas. La versión final utiliza un template HTML y el sistema de plantillas de Django para recorrer y mostrar dinámicamente las tareas enviadas desde la vista.",
+
+    tecnologias: ["Python", "Django", "HTML5"],
+
+    estado: "Completado",
+
+    imagen: "/imagenes/academicos/python-django-tareas-07-resultado-final.png",
+
+    imagenes: [
+      "/imagenes/academicos/python-django-tareas-07-resultado-final.png",
+      "/imagenes/academicos/python-django-tareas-03-servidor-django.png",
+      "/imagenes/academicos/python-django-tareas-04-estructura-proyecto.png",
+      "/imagenes/academicos/python-django-tareas-05-app-registrada.png",
+      "/imagenes/academicos/python-django-tareas-06-vista.png",
+      "/imagenes/academicos/python-django-tareas-01-instalacion-windows.png",
+      "/imagenes/academicos/python-django-tareas-02-instalacion-mac.png",
+    ],
+
+    enlaceGithub:
+      "https://github.com/miguel-pc-09/DAW-2--Proyectos/tree/main/Python/Tareas%20evaluativas/03_3Trimestre/misitio",
+
+    profesor: "César Tejedor Moreno",
+    profesorEnlace: "https://www.linkedin.com/in/ctejedorm/",
+
+    objetivo:
+      "El objetivo del ejercicio era realizar una primera aproximación al desarrollo web con Python y Django, aprendiendo a crear un proyecto, organizar una aplicación, configurar sus rutas, desarrollar vistas y utilizar templates para generar contenido HTML dinámicamente.",
+
+    funcionalidades: [
+      "Creación y configuración de un proyecto Django",
+      "Creación de la aplicación tareas",
+      "Registro de la aplicación mediante INSTALLED_APPS",
+      "Configuración de la ruta principal de la aplicación",
+      "Creación de una vista para gestionar la página de inicio",
+      "Definición de una lista de tareas desde Python",
+      "Envío de las tareas desde la vista hacia el template",
+      "Renderizado de contenido mediante Django",
+      "Creación de un template HTML para mostrar las tareas",
+      "Recorrido de las tareas mediante el sistema de plantillas de Django",
+      "Ejecución de la aplicación mediante el servidor de desarrollo de Django",
+      "Pruebas de funcionamiento desde el navegador",
+    ],
+
+    trabajoRealizado:
+      "Instalé y configuré Django y creé el proyecto misitio junto con la aplicación tareas. Registré la aplicación en la configuración del proyecto, preparé la ruta principal y desarrollé la vista encargada de proporcionar la información. Posteriormente creé un template HTML y modifiqué la vista para utilizar render, enviando la lista de tareas al template para recorrerla y mostrarla dinámicamente en el navegador.",
+
+    estadoDetalle:
+      "La aplicación utiliza una vista de Django que contiene una lista con las tareas Estudiar Python, Hacer ejercicio y Leer un libro. La vista envía esta información al template inicio.html mediante render y el template recorre las tareas para generar la lista que finalmente se muestra en el navegador. El proyecto se ejecuta localmente utilizando el servidor de desarrollo de Django.",
+
+    tecnologiasDetalle:
+      "Python como lenguaje utilizado para desarrollar la aplicación.\nDjango como framework para crear y organizar el proyecto web.\nViews de Django para preparar los datos y gestionar la respuesta de la aplicación.\nDjango Router para relacionar la URL principal con la vista correspondiente.\nTemplates de Django para separar la presentación HTML de la lógica de Python.\nSintaxis de plantillas de Django para recorrer dinámicamente la lista de tareas.\nHTML5 para estructurar la página donde se muestran las tareas.\nSQLite como base de datos creada por defecto con el proyecto Django, aunque esta práctica no utiliza persistencia de tareas en base de datos.\nServidor de desarrollo de Django para ejecutar y probar la aplicación localmente.",
+  },
+  {
+    id: 127,
+    slug: "listado-libros-react-api",
+    seccion: "react",
+    categoria: "Proyecto académico / React · Simulacro",
+    titulo: "Listado de libros con React y API",
+
+    descripcion:
+      "Aplicación desarrollada con React y TypeScript para consumir una API externa y mostrar información de libros de Stephen King junto con sus villanos.",
+
+    descripcionLarga:
+      "Ejercicio de preparación para el examen de Desarrollo Web en Entorno Cliente, impartido por Borja Martín Herrera. La práctica consistía en trabajar con React y TypeScript consumiendo una API externa de Stephen King, recuperar el listado de libros y mostrar su información de forma dinámica. También se trabajó el tipado de los datos recibidos mediante modelos propios y la representación condicional de los villanos asociados a cada libro.",
+
+    tecnologias: [
+      "React",
+      "TypeScript",
+      "JavaScript",
+      "Fetch API",
+      "Bootstrap",
+    ],
+
+    estado: "Completado",
+
+    imagen: "/imagenes/academicos/react-libros-api-01-resultado.png",
+
+    imagenes: [
+      "/imagenes/academicos/react-libros-api-01-resultado.png",
+      "/imagenes/academicos/react-libros-api-02-componente.png",
+      "/imagenes/academicos/react-libros-api-03-modelo.png",
+    ],
+
+    enlaceGithub:
+      "https://github.com/miguel-pc-09/DAW-2--Proyectos/tree/main/Desarrollo%20web%20entorno%20cliente/SIMULACROS/REACT/libros",
+
+    profesor: "Borja Martín Herrera",
+    profesorEnlace: "https://www.linkedin.com/in/borja-mart%C3%ADn-herrera/",
+
+    objetivo:
+      "El objetivo del ejercicio era practicar React y TypeScript antes del examen, trabajando el consumo de una API externa, la gestión del estado, los efectos, el tipado de datos y la representación dinámica de información en componentes.",
+
+    funcionalidades: [
+      "Consumo de una API externa de libros mediante fetch",
+      "Carga automática de los datos al montar el componente",
+      "Gestión de los libros mediante useState",
+      "Uso de useEffect para realizar la petición inicial",
+      "Tipado de la respuesta de la API con TypeScript",
+      "Definición de modelos para libros y villanos",
+      "Representación dinámica del listado de libros",
+      "Visualización del título de cada libro",
+      "Listado de los villanos asociados a cada libro",
+      "Mensaje específico cuando un libro no tiene villanos",
+      "Maquetación mediante cards y rejilla responsive",
+    ],
+
+    trabajoRealizado:
+      "Desarrollé el componente encargado de realizar la petición a la API y gestionar la información recibida. Utilicé useState para almacenar los libros y useEffect para lanzar la carga inicial. También definí los tipos necesarios en TypeScript para representar la estructura de la respuesta de la API y recorrí los datos mediante map para generar dinámicamente cada tarjeta y su listado de villanos.",
+
+    estadoDetalle:
+      "La aplicación realiza una petición a la API de Stephen King al cargar el componente y almacena los libros recibidos en el estado. Después recorre la información para generar una tarjeta por cada libro. Dentro de cada tarjeta se muestran los villanos asociados y, cuando el array de villanos está vacío, la interfaz indica que el libro no tiene villanos.",
+
+    tecnologiasDetalle:
+      "React para construir la interfaz mediante componentes.\nTypeScript para tipar la información recibida desde la API.\nuseState para almacenar el listado de libros.\nuseEffect para ejecutar la petición cuando se carga el componente.\nFetch API para obtener los datos desde el servicio externo.\nInterfaces y tipos de TypeScript para representar libros y villanos.\nmap para recorrer los datos y generar dinámicamente los elementos de la interfaz.\nRenderizado condicional para distinguir los libros con villanos de los que no tienen.\nBootstrap para organizar las tarjetas y la distribución responsive.",
+  },
+  {
+    id: 128,
+    slug: "menu-diario-react",
+    seccion: "react",
+    categoria: "Proyecto académico / React · Simulacro",
+    titulo: "Menú diario con React",
+
+    descripcion:
+      "Aplicación desarrollada con React y TypeScript para registrar alimentos, controlar sus calorías y calcular automáticamente el total del menú diario.",
+
+    descripcionLarga:
+      "Ejercicio de preparación para el examen de Desarrollo Web en Entorno Cliente, impartido por Borja Martín Herrera. La práctica consiste en desarrollar con React y TypeScript un pequeño gestor de menú diario en el que se pueden introducir alimentos junto con sus calorías, mostrarlos dinámicamente en pantalla, eliminarlos y calcular automáticamente la cantidad total de calorías registrada.",
+
+    tecnologias: ["React", "TypeScript", "JavaScript", "Bootstrap"],
+
+    estado: "Completado",
+
+    imagen: "/imagenes/academicos/react-menu-diario-02-alimentos.png",
+
+    imagenes: [
+      "/imagenes/academicos/react-menu-diario-02-alimentos.png",
+      "/imagenes/academicos/react-menu-diario-01-inicial.png",
+      "/imagenes/academicos/react-menu-diario-03-componente.png",
+    ],
+
+    enlaceGithub:
+      "https://github.com/miguel-pc-09/DAW-2--Proyectos/tree/main/Desarrollo%20web%20entorno%20cliente/SIMULACROS/REACT/menudiario",
+
+    profesor: "Borja Martín Herrera",
+    profesorEnlace: "https://www.linkedin.com/in/borja-mart%C3%ADn-herrera/",
+
+    objetivo:
+      "El objetivo del ejercicio era practicar React y TypeScript antes del examen mediante una aplicación que permitiera trabajar con estados, formularios controlados, arrays de objetos, validaciones y cálculos realizados a partir de la información almacenada.",
+
+    funcionalidades: [
+      "Formulario para introducir el nombre de un alimento",
+      "Campo para indicar las calorías del alimento",
+      "Validación para impedir campos vacíos",
+      "Validación para impedir valores de calorías iguales o inferiores a cero",
+      "Creación dinámica de alimentos",
+      "Generación de un identificador para cada alimento",
+      "Listado de los alimentos añadidos al menú",
+      "Visualización de las calorías de cada alimento",
+      "Eliminación individual de alimentos",
+      "Cálculo automático de las calorías totales",
+      "Actualización de la interfaz al añadir o eliminar alimentos",
+      "Limpieza de los campos después de añadir un alimento",
+    ],
+
+    trabajoRealizado:
+      "Desarrollé el componente MenuDiario utilizando varios estados para controlar el nombre, las calorías y el listado de alimentos. Programé la creación de nuevos elementos, las validaciones de los campos y la eliminación individual mediante filter. También utilicé reduce para calcular automáticamente la suma de las calorías de todos los alimentos almacenados y mostrar el resultado actualizado en la interfaz.",
+
+    estadoDetalle:
+      "La aplicación comienza con un menú vacío y un total de cero calorías. El usuario puede introducir el nombre de un alimento y sus calorías para añadirlo al listado. Cada alimento queda almacenado como un objeto y aparece acompañado de un botón para eliminarlo. El total se recalcula automáticamente cada vez que cambia el contenido del menú.",
+
+    tecnologiasDetalle:
+      "React para desarrollar el componente y actualizar dinámicamente la interfaz.\nTypeScript para definir el tipo Alimento y controlar la estructura de los datos.\nuseState para gestionar los campos del formulario y el listado de alimentos.\nFormularios controlados mediante value y onChange.\nArrays de objetos para almacenar los alimentos introducidos.\nfilter para eliminar alimentos mediante su identificador.\nreduce para calcular la suma total de calorías.\nDate.now para generar un identificador para cada alimento.\nBootstrap para los campos, botones, listado y estructura visual de la aplicación.",
+  },
+  {
+    id: 129,
+    slug: "navegacion-react",
+    seccion: "react",
+    categoria: "Proyecto académico / React · Simulacro",
+    titulo: "Navegación y calculadora con React",
+
+    descripcion:
+      "Aplicación desarrollada con React y TypeScript para practicar navegación entre componentes mediante React Router, incorporando una calculadora y un listado dinámico de nombres.",
+
+    descripcionLarga:
+      "Ejercicio de preparación para el examen de Desarrollo Web en Entorno Cliente, impartido por Borja Martín Herrera. La práctica consistía en trabajar con React y TypeScript creando distintas vistas y configurando la navegación entre ellas mediante React Router. La aplicación incluye una calculadora con operaciones básicas y una segunda pantalla que muestra un listado de nombres generado dinámicamente.",
+
+    tecnologias: [
+      "React",
+      "TypeScript",
+      "React Router",
+      "JavaScript",
+      "Bootstrap",
+      "Vite",
+    ],
+
+    estado: "Completado",
+
+    imagen:
+      "/imagenes/academicos/react-navegacion-02-calculadora-resultado.png",
+
+    imagenes: [
+      "/imagenes/academicos/react-navegacion-02-calculadora-resultado.png",
+      "/imagenes/academicos/react-navegacion-01-calculadora.png",
+      "/imagenes/academicos/react-navegacion-03-listado.png",
+    ],
+
+    enlaceGithub:
+      "https://github.com/miguel-pc-09/DAW-2--Proyectos/tree/main/Desarrollo%20web%20entorno%20cliente/SIMULACROS/REACT/navegacion",
+
+    profesor: "Borja Martín Herrera",
+    profesorEnlace: "https://www.linkedin.com/in/borja-mart%C3%ADn-herrera/",
+
+    objetivo:
+      "El objetivo del ejercicio era practicar la navegación entre diferentes componentes de una aplicación React utilizando React Router, además de reforzar el uso de estados, eventos, formularios controlados y representación dinámica de información.",
+
+    funcionalidades: [
+      "Barra de navegación entre las distintas vistas",
+      "Navegación mediante React Router sin recargar la página",
+      "Vista independiente para la calculadora",
+      "Vista independiente para el listado de nombres",
+      "Introducción de dos números mediante campos controlados",
+      "Operación de suma",
+      "Operación de resta",
+      "Operación de multiplicación",
+      "Operación de división",
+      "Control de división entre cero",
+      "Actualización automática del resultado",
+      "Listado dinámico de nombres mediante map",
+    ],
+
+    trabajoRealizado:
+      "Desarrollé la aplicación dividiendo las funcionalidades en los componentes Calculadora y Listado. Configuré la navegación principal mediante React Router utilizando Link, Routes y Route. En la calculadora utilicé useState para gestionar los dos números y el resultado, implementando las cuatro operaciones matemáticas y el control de división entre cero. En la segunda vista preparé un array de nombres y utilicé map para representarlos dinámicamente en pantalla.",
+
+    estadoDetalle:
+      "La aplicación dispone de una barra superior que permite cambiar entre la calculadora y el listado sin realizar una recarga completa de la página. La calculadora permite introducir dos números y ejecutar suma, resta, multiplicación o división, mostrando inmediatamente el resultado. La segunda ruta muestra una lista de nombres generada a partir de un array de TypeScript.",
+
+    tecnologiasDetalle:
+      "React para construir los componentes y la interfaz de la aplicación.\nTypeScript para desarrollar la lógica y tipar los datos utilizados.\nReact Router DOM para configurar las rutas y navegar entre componentes mediante Link, Routes y Route.\nuseState para gestionar los valores introducidos y el resultado de la calculadora.\nEventos onChange y onClick para controlar la interacción del usuario.\nmap para recorrer el array de nombres y generar dinámicamente el listado.\nBootstrap para la barra de navegación, los formularios, botones y listas.\nVite como entorno de desarrollo y construcción del proyecto.",
+  },
 ];
 
 export const ideasProyectos = [
