@@ -1638,6 +1638,74 @@ export const proyectosAcademicos = [
     tecnologiasDetalle:
       "React para construir los componentes y la interfaz de la aplicación.\nTypeScript para desarrollar la lógica y tipar los datos utilizados.\nReact Router DOM para configurar las rutas y navegar entre componentes mediante Link, Routes y Route.\nuseState para gestionar los valores introducidos y el resultado de la calculadora.\nEventos onChange y onClick para controlar la interacción del usuario.\nmap para recorrer el array de nombres y generar dinámicamente el listado.\nBootstrap para la barra de navegación, los formularios, botones y listas.\nVite como entorno de desarrollo y construcción del proyecto.",
   },
+  {
+    id: 130,
+    slug: "formulario-usuarios-vue",
+    seccion: "vue",
+    categoria: "Proyecto académico / Vue · Simulacro",
+    titulo: "Formulario de usuarios con Vue y API",
+
+    descripcion:
+      "Aplicación desarrollada con Vue y TypeScript que combina un formulario de usuarios con el consumo de una API externa para mostrar información dinámica.",
+
+    descripcionLarga:
+      "Ejercicio desarrollado con Vue 3 y TypeScript para practicar diferentes conceptos fundamentales del framework en una misma aplicación. La práctica combina un formulario para introducir y mostrar usuarios con el consumo de la API Random User, obteniendo usuarios externos con su fotografía, nombre y correo electrónico. El ejercicio permite trabajar estado reactivo, formularios, renderizado de listas, tipado de datos y peticiones asíncronas.",
+
+    tecnologias: [
+      "Vue",
+      "TypeScript",
+      "JavaScript",
+      "Fetch API",
+      "Bootstrap",
+      "Vite",
+    ],
+
+    estado: "Completado",
+
+    imagen: "/imagenes/academicos/vue-usuarios-03-usuarios-guardados.png",
+
+    imagenes: [
+      "/imagenes/academicos/vue-usuarios-03-usuarios-guardados.png",
+      "/imagenes/academicos/vue-usuarios-01-api.png",
+      "/imagenes/academicos/vue-usuarios-02-formulario.png",
+      "/imagenes/academicos/vue-usuarios-04-componente.png",
+      "/imagenes/academicos/vue-usuarios-05-helloworld.png",
+    ],
+
+    enlaceGithub:
+      "https://github.com/miguel-pc-09/DAW-2--Proyectos/tree/main/Desarrollo%20web%20entorno%20cliente/SIMULACROS/VUE/usuarios",
+
+    profesor: "Borja Martín Herrera",
+    profesorEnlace: "https://www.linkedin.com/in/borja-mart%C3%ADn-herrera/",
+
+    objetivo:
+      "El objetivo del ejercicio era practicar Vue y TypeScript mediante una aplicación que combinara formularios, estado reactivo, renderizado dinámico de información y consumo de una API externa.",
+
+    funcionalidades: [
+      "Formulario para introducir datos de usuarios",
+      "Campos para nombre, apellido, edad y correo electrónico",
+      "Captura de los datos introducidos mediante estado reactivo",
+      "Almacenamiento de usuarios creados desde el formulario",
+      "Representación dinámica de los usuarios guardados",
+      "Mensaje cuando todavía no existen usuarios registrados",
+      "Consumo de la API externa Random User",
+      "Petición asíncrona mediante fetch",
+      "Carga automática de usuarios al iniciar el componente",
+      "Visualización del nombre y apellido de usuarios de la API",
+      "Visualización del correo electrónico",
+      "Visualización de la fotografía de cada usuario",
+      "Tipado mediante interfaces de TypeScript",
+    ],
+
+    trabajoRealizado:
+      "Desarrollé el componente UsuariosForm utilizando Vue 3 y TypeScript. Definí interfaces para tipar tanto los usuarios introducidos mediante el formulario como la información recibida desde la API. Utilicé ref para gestionar el estado reactivo de los campos, los usuarios guardados, los usuarios externos y el estado de carga. También implementé una petición asíncrona con fetch a Random User y utilicé onMounted para ejecutarla automáticamente al iniciar el componente.",
+
+    estadoDetalle:
+      "La aplicación carga inicialmente un listado de usuarios procedentes de Random User, mostrando para cada uno su fotografía, nombre, apellido y correo electrónico. Paralelamente, el formulario permite introducir nuevos usuarios y almacenarlos en un listado independiente dentro de la interfaz. Cuando todavía no se ha añadido ninguno, se muestra el mensaje 'No hay usuarios'. Al guardar usuarios, estos aparecen dinámicamente junto al formulario.",
+
+    tecnologiasDetalle:
+      "Vue 3 para desarrollar la interfaz mediante componentes y reactividad.\nTypeScript para definir las interfaces User y UserAPI y tipar los datos utilizados.\nComposition API mediante script setup.\nref para gestionar los campos del formulario y los diferentes estados de la aplicación.\nonMounted para ejecutar la petición cuando se inicia el componente.\nFetch API y async/await para consumir la API externa Random User.\nv-model para enlazar los campos del formulario con el estado reactivo.\nv-for para representar dinámicamente los usuarios.\nRenderizado condicional para mostrar el listado o indicar que todavía no existen usuarios.\nBootstrap para la estructura visual, formularios, botones y listados.\nVite como entorno de desarrollo del proyecto.",
+  },
 ];
 
 export const ideasProyectos = [

@@ -16,66 +16,13 @@ function ProyectosAcademicosPage() {
     { id: "bases-datos", nombre: "Bases de datos" },
   ];
 
-  // Devuelve la sección principal de cada proyecto académico.
-  const obtenerCategoriaProyecto = (proyecto) => {
-    if (proyecto.seccion) {
-      return proyecto.seccion;
+  // Comprueba si un proyecto pertenece a una categoría.
+  const perteneceACategoria = (proyecto, categoria) => {
+    if (categoria === "typescript") {
+      return proyecto.tecnologias.includes("TypeScript");
     }
 
-    if (proyecto.tecnologias.includes("Java")) {
-      return "java";
-    }
-
-    if (proyecto.tecnologias.includes("C#")) {
-      return "csharp";
-    }
-
-    if (proyecto.tecnologias.includes("Angular")) {
-      return "angular";
-    }
-
-    if (proyecto.tecnologias.includes("React")) {
-      return "react";
-    }
-
-    if (proyecto.tecnologias.includes("Vue")) {
-      return "vue";
-    }
-
-    if (proyecto.tecnologias.includes("TypeScript")) {
-      return "typescript";
-    }
-
-    if (proyecto.tecnologias.includes("Python")) {
-      return "python";
-    }
-
-    if (proyecto.tecnologias.includes("PHP")) {
-      return "php";
-    }
-
-    if (proyecto.tecnologias.includes("JavaScript")) {
-      return "javascript";
-    }
-
-    if (
-      proyecto.tecnologias.includes("MySQL") ||
-      proyecto.tecnologias.includes("SQL") ||
-      proyecto.tecnologias.includes("PostgreSQL")
-    ) {
-      return "bases-datos";
-    }
-
-    if (
-      proyecto.tecnologias.includes("HTML") ||
-      proyecto.tecnologias.includes("HTML5") ||
-      proyecto.tecnologias.includes("CSS") ||
-      proyecto.tecnologias.includes("CSS3")
-    ) {
-      return "html-css";
-    }
-
-    return null;
+    return proyecto.seccion === categoria;
   };
 
   return (
@@ -106,8 +53,8 @@ function ProyectosAcademicosPage() {
 
       <div className="contenedor academicos-page__contenido">
         {categorias.map((categoria) => {
-          const proyectosCategoria = proyectosAcademicos.filter(
-            (proyecto) => obtenerCategoriaProyecto(proyecto) === categoria.id,
+          const proyectosCategoria = proyectosAcademicos.filter((proyecto) =>
+            perteneceACategoria(proyecto, categoria.id),
           );
 
           return (
