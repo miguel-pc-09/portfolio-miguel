@@ -117,11 +117,11 @@ const proyectos = [
     imagen: "/imagenes/VoltaLibre/inicio.png",
 
     imagenes: [
-      "/imagenes/VoltaLibre/inicio.png",
-      "/imagenes/VoltaLibre/cargadores.png",
-      "/imagenes/VoltaLibre/reservas.png",
-      "/imagenes/VoltaLibre/carga-activa.png",
-      "/imagenes/VoltaLibre/administracion.png",
+      "/imagenes/cargaquer/inicio.png",
+      "/imagenes/cargaquer/cargadores.png",
+      "/imagenes/cargaquer/reservas.png",
+      "/imagenes/cargaquer/carga-activa.png",
+      "/imagenes/cargaquer/administracion.png",
     ],
 
     objetivo:
