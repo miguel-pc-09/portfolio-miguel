@@ -97,13 +97,13 @@ const proyectos = [
   },
   {
     id: 5,
-    slug: "cargaquer",
+    slug: "VoltaLibre",
     categoria: "Aplicación web full stack",
-    titulo: "CargaQuer",
+    titulo: "VoltaLibre",
     descripcion:
       "Aplicación web Full Stack para gestionar reservas y sesiones de carga de vehículos eléctricos, con autenticación, base de datos, automatizaciones y panel de administración.",
     descripcionLarga:
-      "CargaQuer nace a partir de una necesidad real: organizar el uso compartido de cargadores municipales cuando varios usuarios necesitan utilizar las mismas tomas. Desarrollé la aplicación trabajando tanto el frontend como el backend, la autenticación y la base de datos. Los usuarios pueden consultar cargadores, reservar franjas horarias, iniciar y finalizar sesiones de carga y consultar su historial, mientras que la administración dispone de un área independiente para gestionar el servicio.",
+      "VoltaLibre nace a partir de una necesidad real: organizar el uso compartido de cargadores municipales cuando varios usuarios necesitan utilizar las mismas tomas. Desarrollé la aplicación trabajando tanto el frontend como el backend, la autenticación y la base de datos. Los usuarios pueden consultar cargadores, reservar franjas horarias, iniciar y finalizar sesiones de carga y consultar su historial, mientras que la administración dispone de un área independiente para gestionar el servicio.",
     tecnologias: [
       "React",
       "TypeScript",
@@ -113,15 +113,15 @@ const proyectos = [
       "Netlify",
     ],
     estado: "Completado",
-    enlaceDemo: "https://cargaquer.netlify.app/",
-    imagen: "/imagenes/cargaquer/inicio.png",
+    enlaceDemo: "https://voltalibre.netlify.app/login",
+    imagen: "/imagenes/VoltaLibre/inicio.png",
 
     imagenes: [
-      "/imagenes/cargaquer/inicio.png",
-      "/imagenes/cargaquer/cargadores.png",
-      "/imagenes/cargaquer/reservas.png",
-      "/imagenes/cargaquer/carga-activa.png",
-      "/imagenes/cargaquer/administracion.png",
+      "/imagenes/VoltaLibre/inicio.png",
+      "/imagenes/VoltaLibre/cargadores.png",
+      "/imagenes/VoltaLibre/reservas.png",
+      "/imagenes/VoltaLibre/carga-activa.png",
+      "/imagenes/VoltaLibre/administracion.png",
     ],
 
     objetivo:
