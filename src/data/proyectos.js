@@ -114,7 +114,7 @@ const proyectos = [
     ],
     estado: "Completado",
     enlaceDemo: "https://voltalibre.netlify.app/login",
-    imagen: "/imagenes/VoltaLibre/inicio.png",
+    imagen: "/imagenes/cargaquer/inicio.png",
 
     imagenes: [
       "/imagenes/cargaquer/inicio.png",
